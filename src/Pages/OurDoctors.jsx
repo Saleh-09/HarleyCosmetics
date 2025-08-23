@@ -2,7 +2,7 @@ import HeroHeader from "@/components/HeroHeader";
 import React from "react";
 import Doctor1 from "../assets/Doctor1.png"; 
 import Doctor2 from "../assets/Doctor2.png"; 
-import Doctor3 from "../assets/Doctor3.png"; 
+import Doctor3 from "../assets/doctor3.png"; 
 
 const OurDoctors = () => {
     return(
