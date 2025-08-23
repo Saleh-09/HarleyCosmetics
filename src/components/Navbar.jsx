@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/Logo.svg"
 import { Mail, Phone, ChevronDown} from "lucide-react"
+import { Link } from "react-router-dom";
 
 const Navbar = () =>{
     return(
@@ -23,11 +24,13 @@ const Navbar = () =>{
                     <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="flex-shrink-0">
-                        <img
-                            src={Logo}
-                            alt="Logo"
-                            className="h-10 w-auto" 
-                        />
+                        <Link to="/">
+                            <img
+                                src={Logo}
+                                alt="Logo"
+                                className="h-10 w-auto" 
+                            />
+                        </Link>
                     </div>
 
                     {/* Navigation Menu */}
@@ -42,10 +45,18 @@ const Navbar = () =>{
                         <ChevronDown className="w-4 h-4" />
                         
                         </div>
-                        <a href="#" className="text-gray-700 hover:text-gray-900">About Us</a>
-                        <a href="#" className="text-gray-700 hover:text-gray-900">Our Doctors</a>
-                        <a href="#" className="text-gray-700 hover:text-gray-900">Blog</a>
-                        <a href="#" className="text-gray-700 hover:text-gray-900">FAQs</a>
+                        <Link to="/about" className="text-gray-700 hover:text-gray-900">
+                        About Us
+                        </Link>
+                        <Link to="/doctors" className="text-gray-700 hover:text-gray-900">
+                        Our Doctors
+                        </Link>
+                        <Link to="/blog" className="text-gray-700 hover:text-gray-900">
+                        Blog
+                        </Link>
+                        <Link to="/faqs" className="text-gray-700 hover:text-gray-900">
+                        FAQs
+                        </Link>
                     </div>
                     </div>
                 </div>

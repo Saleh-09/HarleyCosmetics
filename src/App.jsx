@@ -1,29 +1,30 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-// import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar'
-import HeroHeader from './components/HeroHeader'
-import Features from './components/Feature'
-import Transformations from './components/Tranformations'
-import Testimonial from './components/Testimonial'
-import Treatments from './components/Treatements.Jsx'
-import FAQs from './components/FAQs'
-import Banner from './components/Banner'
+import Home from './Pages/Home';
+import About from './Pages/About';
+import OurDoctors from './Pages/OurDoctors';
+import FAQs from './components/FAQs';
+import FAQsPage from './Pages/FAQsPage';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="w-screen min-h-screen overflow-x-hidden">
-      <Navbar/>
-      <HeroHeader/>
-      <Features/>
-      <Transformations/> 
-      <Treatments/>   
-      <Testimonial/>
-      <FAQs/>
-      <Banner/>
+    <div>
+      <Router>
+        <div className="w-screen min-h-screen overflow-x-hidden">
+          {/* Navbar always visible */}
+          <Navbar />
+          {/* Page Routes */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/doctors" element={<OurDoctors/>} />
+            <Route path="/faqs" element={<FAQsPage/>} />
+          </Routes>
+        </div>
+      </Router>
     </div>
   )
 }

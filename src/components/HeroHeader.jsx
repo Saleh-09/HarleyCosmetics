@@ -1,9 +1,14 @@
 import React from "react";
 import Herobg from "../assets/HeroImage.png"
-const HeroHeader =()=>{
+const HeroHeader = ({ 
+  title, 
+  subtitle, 
+  badge, 
+  height = "h-[600px]" // default height if not provided
+}) => {
     return(
         <div
-            className="relative h-[600px] bg-cover bg-center bg-no-repeat mb-15"
+            className={`relative ${height} bg-cover bg-center bg-no-repeat mb-15`}
             style={{ backgroundImage: `url(${Herobg})` }}
         >
             {/* Overlay */}
@@ -11,18 +16,21 @@ const HeroHeader =()=>{
 
             {/* Content */}
             <div className="relative z-10 flex items-center justify-center h-full">
-            <div className="text-center text-white max-w-4xl px-4">
-                <h1 className="text-5xl md:text-7xl font-medium mb-6 leading-tight font-bevietnam">
-                Hair Transplants
-                <br />
-                To Restore Your Natural
-                <br />
-                Look
+                <div className="text-center text-white max-w-4xl px-4">
+                {badge && (
+                    <span className="inline-block bg-[#3C2031] text-[#FCD9A1] px-6 py-4 rounded-full text-sm font-medium mb-4">
+                    {badge}
+                    </span>
+                )}
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal mb-6 leading-tight font-bevietnam">
+                    {title}
                 </h1>
-                <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
-                </p>
-            </div>
+                {subtitle && (
+                    <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
+                    {subtitle}
+                    </p>
+                )}
+                </div>
             </div>
         </div>
     )

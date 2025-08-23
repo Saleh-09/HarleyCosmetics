@@ -3,7 +3,8 @@ import Surgeon from "../assets/surgeon.svg"
 import People from "../assets/people.svg"
 import Gurantee from "../assets/Gurantee.png"
 import DentalChair from "../assets/dental-chair.svg"
-const Features =()=>{
+
+const Features =({ number, title, description }) => {
     return(
         <div className="max-w-7xl mx-auto px-4 mb-15">
           {/* Features Badge */}
@@ -19,8 +20,9 @@ const Features =()=>{
             </p>
           </div>
           {/* Features Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-            <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-10">
+            
+            <div className="bg-white w-[314px] max-w-full mx-auto rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex justify-center mb-6">
                 <div className="w-23 h-23 bg-gray-100 rounded-full flex items-center justify-center">
                     <img
