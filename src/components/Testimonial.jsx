@@ -1,6 +1,4 @@
 import React from "react";
-import PlayIcon from "../assets/play-icon.svg"; 
-import Rating from "../assets/rating.svg"; 
 import TestimonialVideo from "../assets/testimonial-Man.svg"
 import { Play, Star } from "lucide-react"
 
