@@ -1,12 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
-import Navbar from './components/Navbar'
+
+import { ArrowRight } from "lucide-react";
+import Navbar from './components/Navbar';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import OurDoctors from './Pages/OurDoctors';
 import FAQsPage from './Pages/FAQsPage';
-import ContactUs from "./Pages/ContactUs";
-import { ArrowRight } from "lucide-react";
+import ContactUs from './Pages/ContactUs';
 
 function FloatingButton() {
   const location = useLocation();
@@ -45,15 +46,15 @@ function App() {
       <Router>
         <div className="w-screen min-h-screen overflow-x-hidden">
           {/* Navbar always visible */}
-          <Navbar />
+          <Navbar/>
 
           {/* Page Routes */}
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/doctors" element={<OurDoctors />} />
-            <Route path="/faqs" element={<FAQsPage />} />
-            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/" element={<Home/>} />
+            <Route path="/about" element={< About />} />
+            <Route path="/doctors" element={< OurDoctors />} />
+            <Route path="/faqs" element={<FAQsPage/>} />
+            <Route path="/contact" element={<ContactUs/>} />
           </Routes>
 
           {/* Floating Button (hidden on contact page) */}
