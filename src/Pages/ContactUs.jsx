@@ -1,6 +1,7 @@
 import React from "react";
 import { ChevronDown, Mail, Phone, MapPin } from "lucide-react"
 import HeroHeader from "@/components/HeroHeader";
+import Footer from "@/components/Footer";
 const ContactUs = () => {
     return(
         <div className="min-h-screen bg-white">
@@ -150,7 +151,8 @@ const ContactUs = () => {
                 </div>
                 </div>
             </div>
-        </div>
+        </div>|
+        <Footer/>
     )
 }
 export default ContactUs
