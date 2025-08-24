@@ -36,11 +36,11 @@ const Navbar = () =>{
                 <div className="max-w-7xl mx-auto px-4 flex justify-center items-center gap-8">
                 <div className="flex items-center gap-2">
                     <Mail className="w-4 h-4" />
-                    <span className="text-sm">harleycosmetics@gmail.com</span>
+                    <span className="text-[14px] lg:text-[17px]">harleycosmetics@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                      <Phone className="w-4 h-4" />
-                    <span className="text-sm">+44 565 6721</span>
+                    <span className="text-[14px] lg:text-[17px]">+44 565 6721</span>
                 </div>
                 </div>
             </div>
