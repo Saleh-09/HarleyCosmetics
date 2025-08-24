@@ -16,7 +16,7 @@ const WhyChooseUs = ({
           <img
             src={image}
             alt={title}
-            className="w-[648px] h-[491px] object-cover rounded-2xl shadow-lg"
+            className="w-[265px] md:w-[648px] md:h-[491px] h-auto object-cover rounded-2xl shadow-lg"
           />
         </div>
 
