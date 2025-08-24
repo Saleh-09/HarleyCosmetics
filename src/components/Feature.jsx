@@ -37,56 +37,6 @@ const Features =({ number, title, description }) => {
                 15+ years in hair restoration with proven expertise
               </p>
             </div>
-            
-            <div className="bg-white w-[314px] max-w-full mx-auto rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex justify-center mb-6">
-                <div className="w-23 h-23 bg-gray-100 rounded-full flex items-center justify-center">
-                    <img
-                        src={People}
-                        alt="Logo"
-                        className="h-14 w-auto" 
-                   />
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Proven Results</h3>
-              <p className="text-gray-600 text-center leading-relaxed">
-                500+ successful transplants with satisfied patients
-              </p>
-            </div>
-
-            <div className="bg-white w-[314px] max-w-full mx-auto rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex justify-center mb-6">
-                <div className="w-23 h-23 bg-gray-100 rounded-full flex items-center justify-center">
-                    <img
-                        src={DentalChair}
-                        alt="Logo"
-                        className="h-14 w-auto" 
-                   />
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Latest Technology</h3>
-              <p className="text-gray-600 text-center leading-relaxed">
-                Advanced FUE/DHI techniques for optimal results
-              </p>
-            </div>
-
-            <div className="bg-white w-[314px] max-w-full mx-auto rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex justify-center mb-6">
-                <div className="w-23 h-23 bg-gray-100 rounded-full flex items-center justify-center">
-                    <img
-                        src={Gurantee}
-                        alt="Logo"
-                        className="h-14 w-auto" 
-                   />
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Natural Look Guaranteed</h3>
-              <p className="text-gray-600 text-center leading-relaxed">
-                Seamless integration with your existing hair
-              </p>
-            </div>
-
-
           </div>
         </div>
         
