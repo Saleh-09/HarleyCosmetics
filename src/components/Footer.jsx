@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../assets/Logo.svg"
 import { Facebook, Instagram, Linkedin, Star } from "lucide-react"
 
 const Footer = () => {
@@ -8,7 +9,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           {/* Left section - Logo and Social Icons */}
           <div className="flex flex-col gap-4">
-            <h2 className="text-2xl font-bold text-gray-900 tracking-wide">HARLEY</h2>
+            <div className="flex-shrink-0">
+                <Link to="/">
+                    <img src={Logo} alt="Logo" className="h-10 w-auto" />
+                </Link>
+            </div>
             <div className="flex gap-3">
               <div className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer">
                 <Facebook className="w-5 h-5 text-white" />
