@@ -1,6 +1,6 @@
-import HeroHeader from "../components/HeroHeader";
+import HeroHeader from "@/components/HeroHeader";
 import React from "react";
-import DrZakar from "../assets/DoctorImages/DrZakarRafiq.png";
+import DrZakar from "../assets/DoctorImages/Dr.ZakarRafiq.png";
 
 const OurDoctors = () => {
     return(
