@@ -32,7 +32,7 @@ const Features =({ number, title, description }) => {
                    />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Experienced Surgeons</h3>
+              <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Experienced Surgeons</h3>
               <p className="text-gray-600 text-center leading-relaxed">
                 15+ years in hair restoration with proven expertise
               </p>
@@ -49,7 +49,7 @@ const Features =({ number, title, description }) => {
                    />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Proven Results</h3>
+              <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Proven Results</h3>
               <p className="text-gray-600 text-center leading-relaxed">
                 500+ successful transplants with satisfied patients
               </p>
@@ -65,7 +65,7 @@ const Features =({ number, title, description }) => {
                    />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Latest Technology</h3>
+              <h3 className="text-[20px] font-bevietnam font-semibold text-gray-900 mb-4 text-center">Latest Technology</h3>
               <p className="text-gray-600 text-center leading-relaxed">
                 Advanced FUE/DHI techniques for optimal results
               </p>
@@ -81,7 +81,7 @@ const Features =({ number, title, description }) => {
                    />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">Natural Look Guaranteed</h3>
+              <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Natural Look Guaranteed</h3>
               <p className="text-gray-600 text-center leading-relaxed">
                 Seamless integration with your existing hair
               </p>
