@@ -1,8 +1,6 @@
 import HeroHeader from "@/components/HeroHeader";
 import React from "react";
-import Doctor1 from "../assets/Doctor1.png"; 
-import Doctor2 from "../assets/Doctor2.png"; 
-import Doctor3 from "../assets/doctor3.png"; 
+import DrZakir from "../assets/DoctorImages/Dr. Zakar Rafiq.png";
 
 const OurDoctors = () => {
     return(
@@ -28,7 +26,7 @@ const OurDoctors = () => {
                 {/* Doctor Card 1 */}
                 <div>
                     <img className="mb-3"
-                      src={Doctor1}
+                      src={DrZakir}
                       alt="firstTranformation"
                     />
                     <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Ahmed Khan</h2>
@@ -43,7 +41,7 @@ const OurDoctors = () => {
                       src={Doctor2}
                       alt="firstTranformation"
                     />
-                    <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Ahmed Khan</h2>
+                    <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Zakar Rafiq</h2>
                     <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon | Dermatologist</h3>
                     <p className="text-gray-600 text-center leading-relaxed">
                        15+ Years in Hair Restoration Surgery, MBBS, FCPS, Fellowship in Hair Restoration, ISHRS Certified
