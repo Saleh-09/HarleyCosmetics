@@ -17,8 +17,7 @@
     height: 100%;
     overflow-x: hidden; /* block horizontal scroll */
     font-family: 'Be Vietnam', sans-serif;
-    padding-left: 15px;   /* Add this */
-    padding-right: 15px;  /* Add this */
+    
   }
 }
 
