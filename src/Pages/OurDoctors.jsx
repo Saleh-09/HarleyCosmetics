@@ -1,6 +1,6 @@
-import HeroHeader from "@/components/HeroHeader";
+import HeroHeader from "../components/HeroHeader";
 import React from "react";
-import DrZakir from "../assets/DoctorImages/DrZakarRafiq.png";
+import DrZakar from "../assets/DoctorImages/DrZakarRafiq.png";
 
 const OurDoctors = () => {
     return(
@@ -26,7 +26,7 @@ const OurDoctors = () => {
                 {/* Doctor Card 1 */}
                 <div>
                     <img className="mb-3"
-                      src={DrZakir}
+                      src={DrZakar}
                       alt="firstTranformation"
                     />
                     <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Zakir Rafiq</h2>
