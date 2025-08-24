@@ -5,8 +5,8 @@ const ContactUs = () => {
     return(
         <div className="min-h-screen bg-white">
         <HeroHeader
-            title="Trusted Experts Dedicated to Natural Hair Transformation"
-            badge="Who We Are"
+            title="Reach Out Today for Personalised Hair Restoration Guidance"
+            badge="Contact Us"
             height="h-[365px]"
             />
         <div className="container mx-auto px-4 py-16 max-w-6xl">
@@ -120,7 +120,7 @@ const ContactUs = () => {
                     {/* Submit Button */}
                     <button
                     type="submit"
-                    className="bg-[#5d3a5d] text-white px-8 py-3 rounded-full font-medium hover:bg-[#4a2d4a] transition-colors"
+                    className="bg-[#3C2031] text-[#FCD9A1]] px-8 py-3 rounded-full font-medium hover:bg-[#4a2d4a] transition-colors"
                     >
                     Book Your Consultation
                     </button>
@@ -129,7 +129,7 @@ const ContactUs = () => {
                 {/* Contact Information */}
                 <div className="space-y-8">
                     <div className="flex items-start space-x-4">
-                    <div className="bg-[#5d3a5d] p-3 rounded-lg">
+                    <div className="bg-[#3C2031] p-3 rounded-lg">
                         <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -139,24 +139,12 @@ const ContactUs = () => {
                     </div>
 
                     <div className="flex items-start space-x-4">
-                    <div className="bg-[#5d3a5d] p-3 rounded-lg">
+                    <div className="bg-[#3C2031] p-3 rounded-lg">
                         <Phone className="w-6 h-6 text-white" />
                     </div>
                     <div>
                         <h3 className="font-semibold text-gray-900 mb-1">Phone:</h3>
                         <p className="text-gray-600">+44 565 6721</p>
-                    </div>
-                    </div>
-
-                    <div className="flex items-start space-x-4">
-                    <div className="bg-[#5d3a5d] p-3 rounded-lg">
-                        <MapPin className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                        <h3 className="font-semibold text-gray-900 mb-1">Location:</h3>
-                        <p className="text-gray-600">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.
-                        </p>
                     </div>
                     </div>
                 </div>

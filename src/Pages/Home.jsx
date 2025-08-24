@@ -17,7 +17,7 @@ const Home = () => {
              Hair Transplants <br /> To Restore Your Natural <br /> Look
             </>
             }
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna."
+            subtitle="Our advanced hair transplant techniques deliver natural, lasting results—restoring your confidence with fuller, healthier hair."
         />
         <Features/>
         <Transformations/>
