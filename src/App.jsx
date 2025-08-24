@@ -36,11 +36,6 @@ function FloatingButton() {
 }
 
 function App() {
-  const location = useLocation();
-
-  // Hide button on Contact Us page
-  if (location.pathname === "/contact") return null;
-
   return (
     <div>
       <Router>
