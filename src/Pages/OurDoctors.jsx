@@ -1,6 +1,11 @@
 import HeroHeader from "@/components/HeroHeader";
 import React from "react";
 import DrZakar from "../assets/DoctorImages/Dr.ZakarRafiq.png";
+import DrHaider from "../assets/DoctorImages/Dr.HaiderGillani.png";
+import DrMahdi from "../assets/DoctorImages/Dr.MahdiAlosert.png";
+import DrMasood from "../assets/DoctorImages/Dr.MasoodMunir.png";
+import DrSami from "../assets/DoctorImages/Dr.SamiMirza.png";
+import DrShuaib from "../assets/DoctorImages/Dr.ShuaibMir.png";
 
 const OurDoctors = () => {
     return(
@@ -30,9 +35,74 @@ const OurDoctors = () => {
                       alt="firstTranformation"
                     />
                     <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Zakir Rafiq</h2>
-                    <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon | Dermatologist</h3>
+                    <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
                     <p className="text-gray-600 text-center leading-relaxed">
-                       15+ Years in Hair Restoration Surgery, MBBS, FCPS, Fellowship in Hair Restoration, ISHRS Certified
+                       7+ years experience | 4000+ hair restoration surgeries | Expert in advanced hair loss & alopecia treatments
+                    </p>
+                </div>
+                
+                {/* Doctor Card 2 */}
+                <div>
+                    <img className="mb-3"
+                      src={DrHaider}
+                      alt="firstTranformation"
+                    />
+                    <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr Haider Gillani</h2>
+                    <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
+                    <p className="text-gray-600 text-center leading-relaxed">
+                       10+ years experience | 1000+ FUE procedures | Specialist in hairline design & Afro-Caribbean hair types
+                    </p>
+                </div>
+                
+                {/* Doctor Card 3 */}
+                <div>
+                    <img className="mb-3"
+                      src={DrMahdi}
+                      alt="firstTranformation"
+                    />
+                    <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Mahdi Alosert</h2>
+                    <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
+                    <p className="text-gray-600 text-center leading-relaxed">
+                       1000+ successful surgeries | Expert in FUE & aesthetic treatments | Experience with celebrity clientele
+                    </p>
+                </div>
+                
+                {/* Doctor Card 4 */}
+                <div>
+                    <img className="mb-3"
+                      src={DrMasood}
+                      alt="firstTranformation"
+                    />
+                    <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Masood Munir</h2>
+                    <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
+                    <p className="text-gray-600 text-center leading-relaxed">
+                       8+ years experience | Specialist in FUE & Afro hair transplants | PRP, Botox & minimally invasive cosmetic procedures
+                    </p>
+                </div>
+                
+                {/* Doctor Card 5 */}
+                <div>
+                    <img className="mb-3"
+                      src={DrSami}
+                      alt="firstTranformation"
+                    />
+                    <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Sami Mirza</h2>
+                    <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
+                    <p className="text-gray-600 text-center leading-relaxed">
+                       3+ years experience | Specialist in FUE, Afro & unshaven transplants | Botox & minimally invasive cosmetic procedures
+                    </p>
+                </div>
+                
+                {/* Doctor Card 6 */}
+                <div>
+                    <img className="mb-3"
+                      src={DrShuaib}
+                      alt="firstTranformation"
+                    />
+                    <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Shuaib Mir</h2>
+                    <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
+                    <p className="text-gray-600 text-center leading-relaxed">
+                       3+ years experience | 1000+ successful cases | Specialist in FUE, PRP, mesotherapy & natural hairline design
                     </p>
                 </div>
                 
