@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/Logo.svg"
 import { Facebook, Instagram, Linkedin, Star } from "lucide-react"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return(
