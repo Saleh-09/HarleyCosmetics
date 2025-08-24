@@ -7,6 +7,7 @@ import DrMasood from "../assets/DoctorImages/Dr.MasoodMunir.png";
 import DrSami from "../assets/DoctorImages/Dr.SamiMirza.png";
 import DrShuaib from "../assets/DoctorImages/Dr.ShuaibMir.png";
 import Banner from "@/components/Banner";
+import Footer from "@/components/Footer";
 
 const OurDoctors = () => {
     return(

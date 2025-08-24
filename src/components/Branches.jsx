@@ -41,7 +41,7 @@ const Branches = () => {
                         alt="Manchester"
                         className="w-[420px] h-[313px] object-cover rounded-2xl shadow-lg"
                     />
-                    <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3 text-center">Central London</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3 text-center">Manchester</h3>
                     <p className="text-gray-600 text-center leading-relaxed">
                        45 King Street, Manchester M2 4LQ, United Kingdom
                     </p>
@@ -53,7 +53,7 @@ const Branches = () => {
                         alt="Amsterdam"
                         className="w-[420px] h-[313px] object-cover rounded-2xl shadow-lg"
                     />
-                    <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3 text-center">Central London</h3>
+                    <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3 text-center">Glassgow</h3>
                     <p className="text-gray-600 text-center leading-relaxed">
                        221B Baker Street, Marylebone, London W1U 6SG, United Kingdom
                     </p>
