@@ -150,9 +150,10 @@ const ContactUs = () => {
                     </div>
                 </div>
                 </div>
-            </div>
-        </div>|
+         </div>
+            
         <Footer/>
+        </div>
     )
 }
 export default ContactUs
