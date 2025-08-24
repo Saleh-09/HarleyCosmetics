@@ -6,6 +6,8 @@ import About from './Pages/About';
 import OurDoctors from './Pages/OurDoctors';
 import FAQsPage from './Pages/FAQsPage';
 import ContactUs from "./Pages/ContactUs";
+import { Link } from 'react-router-dom';
+import { ArrowRight } from "lucide-react";
 
 function App() {
   return (
@@ -22,6 +24,23 @@ function App() {
             <Route path="/faqs" element={<FAQsPage/>} />
             <Route path="/contact" element={<ContactUs/>} />
           </Routes>
+           {/* Floating Button */}
+         <Link
+            to="/contact"
+            className="
+              fixed bottom-4 
+              right-1/2 translate-x-1/2   /* Center on mobile */
+              sm:right-6 sm:translate-x-0 /* Move to bottom-right on sm+ screens */
+              bg-[#FCD9A1] hover:bg-yellow-500 
+              text-[#3C2031] font-semibold 
+              px-6 py-3 rounded-2xl text-lg 
+              flex items-center justify-center gap-2 
+              shadow-xl z-50
+            "
+          >
+            Book Free Consultation
+            <ArrowRight className="w-5 h-5" />
+          </Link>
         </div>
       </Router>
     </div>
