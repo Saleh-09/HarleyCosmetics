@@ -25,7 +25,7 @@ const Treatments = () => {
                         <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
                             Fue Hair Transplant</h3>
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           A minimally invasive procedure that extracts individual hair follicles and implants them for natural, scar-free results with faster recovery
+                           Minimally invasive procedure using follicular unit extraction for natural, permanent hair restoration.
                         </p>
                         <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
                             <Link to="/treatment/1" className="flex items-center justify-center gap-2">
@@ -40,9 +40,9 @@ const Treatments = () => {
                 <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
                     <div className="flex flex-col  items-center justify-center space-x-0.5 mb-6">
                         <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
-                            Fue Hair Transplant</h3>
+                            Beard Transplant</h3>
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           A minimally invasive procedure that extracts individual hair follicles and implants them for natural, scar-free results with faster recovery
+                           Enhances facial hair density and symmetry with precise graft placement for a fuller, natural beard.
                         </p>
                         <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
                             <Link to="/treatment/1" className="flex items-center justify-center gap-2">
@@ -57,9 +57,9 @@ const Treatments = () => {
                 <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
                     <div className="flex flex-col  items-center justify-csnter space-x-0.5 mb-6">
                         <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
-                            Fue Hair Transplant</h3>
+                           Eyebrow Transplant</h3>
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           A minimally invasive procedure that extracts individual hair follicles and implants them for natural, scar-free results with faster recovery
+                           Restores thin or patchy eyebrows with meticulous follicle implantation for a natural, defined look.
                         </p>
                         <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
                             <Link to="/treatment/1" className="flex items-center justify-center gap-2">
@@ -74,9 +74,9 @@ const Treatments = () => {
                 <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
                     <div className="flex flex-col  items-center justify-center space-x-0.5 mb-6">
                         <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
-                            Fue Hair Transplant</h3>
+                            Female Hair Transplant</h3>
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           A minimally invasive procedure that extracts individual hair follicles and implants them for natural, scar-free results with faster recovery
+                           Advanced solutions for women experiencing thinning or hair loss, restoring natural volume and hairline.
                         </p>
                         <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
                             <Link to="/treatment/1" className="flex items-center justify-center gap-2">
@@ -91,9 +91,9 @@ const Treatments = () => {
                 <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
                     <div className="flex flex-col  items-center justify-center space-x-0.5 mb-6">
                         <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
-                            Fue Hair Transplant</h3>
+                            Afro Hair Transplant</h3>
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           A minimally invasive procedure that extracts individual hair follicles and implants them for natural, scar-free results with faster recovery
+                           Specialised technique tailored for Afro-Caribbean hair, ensuring natural curl pattern and density.
                         </p>
                         <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
                             <Link to="/treatment/1" className="flex items-center justify-center gap-2">
@@ -108,9 +108,9 @@ const Treatments = () => {
                 <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
                     <div className="flex flex-col  items-center justify-csnter space-x-0.5 mb-6">
                         <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
-                            Fue Hair Transplant</h3>
+                            Un-Shaven Hair Transplant</h3>
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           A minimally invasive procedure that extracts individual hair follicles and implants them for natural, scar-free results with faster recovery
+                           Discreet procedure performed without shaving, ideal for maintaining your existing hairstyle.
                         </p>
                         <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
                             <Link to="/treatment/1" className="flex items-center justify-center gap-2">
