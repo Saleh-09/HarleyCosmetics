@@ -11,7 +11,7 @@ import FAQsPage from './Pages/FAQsPage';
 
 function App() {
   return (
-    <div>
+    <div className='bg-amber-500'>
       <Router>
         <div className="w-screen min-h-screen overflow-x-hidden">
           {/* Navbar always visible */}
