@@ -32,8 +32,8 @@ const Navbar = () =>{
     return(
         <header>
              {/* Top Contact Bar */}
-            <div className="bg-[#3C2031] text-white py-3">
-                <div className="max-w-7xl mx-auto px-4 flex justify-center items-center gap-8">
+            <div className="bg-[#3C2031] text-white py-4">
+                <div className="max-w-7xl mx-auto px-4 flex justify-center items-center gap-8 whitespace-nowrap overflow-x-auto">
                 <div className="flex items-center gap-2">
                     <Mail className="w-4 h-4" />
                     <span className="text-[14px] lg:text-[17px]">harleycosmetics@gmail.com</span>
