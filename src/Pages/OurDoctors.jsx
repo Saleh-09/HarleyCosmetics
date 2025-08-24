@@ -29,7 +29,7 @@ const OurDoctors = () => {
                       src={DrZakir}
                       alt="firstTranformation"
                     />
-                    <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Ahmed Khan</h2>
+                    <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Zakir Rafiq</h2>
                     <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon | Dermatologist</h3>
                     <p className="text-gray-600 text-center leading-relaxed">
                        15+ Years in Hair Restoration Surgery, MBBS, FCPS, Fellowship in Hair Restoration, ISHRS Certified
