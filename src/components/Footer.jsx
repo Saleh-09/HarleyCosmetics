@@ -27,18 +27,18 @@ const Footer = () => {
             {/* Explore Column */}
             <div className="flex flex-col gap-3">
               <h3 className="font-semibold text-gray-900 mb-2">Explore</h3>
-              <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-                About Us
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-                Our Doctors
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-                Blog
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-                FAQs
-              </a>
+                <Link to="/about" className="text-gray-700 hover:text-gray-900">
+                    About Us
+                </Link>
+                <Link to="/doctors" className="text-gray-700 hover:text-gray-900">
+                    Our Doctors
+                </Link>
+                <Link to="/blog" className="text-gray-700 hover:text-gray-900">
+                    Blog
+                </Link>
+                <Link to="/faqs" className="text-gray-700 hover:text-gray-900">
+                    FAQs
+                </Link>
             </div>
 
             {/* Legal Links Column */}
