@@ -121,7 +121,7 @@ const ContactUs = () => {
                     {/* Submit Button */}
                     <button
                     type="submit"
-                    className="bg-[#3C2031] text-[#FCD9A1]] px-8 py-3 rounded-full font-medium hover:bg-[#4a2d4a] transition-colors"
+                    className="bg-[#3C2031] text-[#FCD9A1] px-8 py-3 rounded-full font-medium hover:bg-[#4a2d4a] transition-colors"
                     >
                     Book Your Consultation
                     </button>
