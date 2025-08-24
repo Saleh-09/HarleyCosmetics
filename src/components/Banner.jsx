@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 const Banner = () => {
     return (
             <div className="flex items-center justify-center min-h-[400px]">
@@ -22,8 +23,10 @@ const Banner = () => {
 
                     {/* Button */}
                     <Button className="bg-[#FCD9A1] hover:bg-yellow-500 text-[#3C2031] font-semibold px-10 py-7 rounded-2xl text-lg flex items-center gap-2 shadow-lg">
-                    Book Free Consultation
-                    <ArrowRight className="w-5 h-5" />
+                        <Link to="/contact">
+                            Book Free Consultation
+                            <ArrowRight className="w-5 h-5" />
+                        </Link>   
                     </Button>
 
                 </div>

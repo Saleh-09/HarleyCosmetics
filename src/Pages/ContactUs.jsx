@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "@/components/header"
 import { ChevronDown, Mail, Phone, MapPin } from "lucide-react"
 import HeroHeader from "@/components/HeroHeader";
 const ContactUs = () => {
@@ -166,3 +165,4 @@ const ContactUs = () => {
         </div>
     )
 }
+export default ContactUs
