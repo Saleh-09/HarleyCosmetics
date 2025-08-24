@@ -110,6 +110,7 @@ const OurDoctors = () => {
                 </div>
             </div>
             <Banner/>
+            <Footer/>
         </div>
     )
 }

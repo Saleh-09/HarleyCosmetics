@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import FAQs from "@/components/FAQs";
+import Footer from "@/components/Footer";
 import HeroHeader from "@/components/HeroHeader";
 import React from "react";
 
@@ -13,6 +14,7 @@ const FAQsPage = () => {
             />
             <FAQs/>
             <Banner/>
+            <Footer/>
         </div>
     )
 }

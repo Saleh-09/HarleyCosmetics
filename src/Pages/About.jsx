@@ -7,6 +7,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import React from "react";
 import { useState } from "react";
 import ClinicImage from "../assets/clinic.svg"; // replace with your image path
+import Footer from "@/components/Footer";
 
 const About = () => {
     return (
@@ -28,6 +29,7 @@ const About = () => {
             <Transformations/>
             <Branches/>
             <Banner/>
+            <Footer/>
         </div>
     )
 }

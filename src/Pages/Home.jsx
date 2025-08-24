@@ -1,6 +1,7 @@
 import Banner from "@/components/Banner";
 import FAQs from "@/components/FAQs";
 import Features from "@/components/Feature";
+import Footer from "@/components/Footer";
 import HeroHeader from "@/components/HeroHeader";
 import Testimonial from "@/components/Testimonial";
 import Transformations from "@/components/Tranformations";
@@ -24,6 +25,7 @@ const Home = () => {
         <Testimonial/>
         <FAQs limit={5} />
         <Banner/>
+        <Footer/>
         </div>
     )
 }
