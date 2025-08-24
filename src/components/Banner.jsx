@@ -22,12 +22,13 @@ const Banner = () => {
                     </p>
 
                     {/* Button */}
-                    <Button className="bg-[#FCD9A1] hover:bg-yellow-500 text-[#3C2031] font-semibold px-10 py-7 rounded-2xl text-lg flex items-center gap-2 shadow-lg">
-                        <Link to="/contact">
-                            Book Free Consultation
-                            <ArrowRight className="w-5 h-5" />
-                        </Link>   
-                    </Button>
+                   <Link
+                    to="/contact"
+                    className="bg-[#FCD9A1] hover:bg-yellow-500 text-[#3C2031] font-semibold px-10 py-7 rounded-2xl text-lg flex items-center gap-2 shadow-lg"
+                    >
+                    Book Free Consultation
+                    <ArrowRight className="w-5 h-5" />
+                    </Link>
 
                 </div>
                 </div>
