@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/Logo.svg"
-import { Mail, Phone, ChevronDown} from "lucide-react"
+import { Mail, Phone, ChevronDown, Menu, X} from "lucide-react"
 import { Link } from "react-router-dom";
 import { useState } from "react"
 
