@@ -53,14 +53,7 @@ const BlogsDetailsPage = () => {
                 </div>
                 </section>
 
-                {/* Featured Image */}
-                <div className="my-12">
-                <img
-                    src={haircare}
-                    alt="Woman with healthy, shiny hair applying natural hair care products"
-                    className="w-full h-auto rounded-lg shadow-sm"
-                />
-                </div>
+               
 
                 {/* Section 3 */}
                 <section className="space-y-4">
