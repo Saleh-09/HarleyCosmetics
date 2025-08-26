@@ -8,7 +8,7 @@ import FAQs from "@/components/FAQs";
 import Step1 from "../assets/Step1.svg"
 const FueHairTransplant = () => {
     return(
-        <div> 
+        <div className="w-screen min-h-screen overflow-x-hidden"> 
             <HeroHeader
             title="Personalized Hair Transplant Solutions for Lasting, Natural Results"
             badge="Fue Hair Transplant"
@@ -72,9 +72,7 @@ const FueHairTransplant = () => {
                 </p>
               </div>
             </div>          
-            </div>
-         
-            
+            </div>            
             <Transformations/>
             <FAQs/>
             <Banner/>
