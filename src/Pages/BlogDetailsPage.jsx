@@ -1,5 +1,4 @@
 import React from "react";
-import haircare from "../assets/haircare.jpg";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 const BlogsDetailsPage = () => {
