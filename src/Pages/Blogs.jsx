@@ -27,6 +27,43 @@ const blogPosts = [
   },
 ]
 
+const CustomCard = ({ image, title, description, date, link }) => {
+  return (
+    <div className="max-w-sm bg-white rounded-lg shadow-md overflow-hidden">
+      {/* Image Section */}
+      <div className="relative">
+        <img
+          src={image}
+          alt={title}
+          className="w-[417px] h-[408px] object-cover"
+        />
+        {/* Overlapping Read More Button */}
+        <Link href={link}>
+          <button className="absolute bottom-4 right-4 bg-white text-black hover:bg-gray-100 shadow-lg border-0 rounded-full px-4 py-2 text-sm font-medium flex items-center">
+            Read more
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </button>
+        </Link>
+      </div>
+
+      {/* Text Section */}
+      <div className="p-4 text-center">
+        {/* Date below image */}
+        <p className="text-sm text-gray-500 mb-2">{date}</p>
+
+        {/* Title */}
+        <h2 className="text-xl font-semibold text-gray-900 mb-2">
+          {title}
+        </h2>
+
+        {/* Description */}
+        <p className="text-gray-600 leading-relaxed">
+          {description}
+        </p>
+      </div>
+    </div>
+  );
+};
 
 const Blogs = () => {
     return(
@@ -48,6 +85,15 @@ const Blogs = () => {
               Watch videos showcasing the remarkable results achieved by our skilled surgeons.
             </p>
         </div>
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <CustomCard
+            image={haircare}
+            title="Beard Transplant"
+            description="2,000 Grafts | Donor Area: Back of scalp | Result Time: 8 Months"
+            date="April 10, 2024"
+            link="/blog/beard-transplant"
+            />
+        </div>
         <main className="max-w-6xl mx-auto px-6 py-16">
             <div className="space-y-12">
                 {/* Blog Cards Grid */}
@@ -55,7 +101,7 @@ const Blogs = () => {
                 {blogPosts.map((post) => (
                     <Card
                         key={post.id}
-                        className="overflow-hidden hover:shadow-lg transition-shadow duration-300 border-0" // ✅ removed border
+                        className="overflow-hidden hover:shadow-lg transition-shadow duration-300 border-0"
                         >
                         <div className="overflow-hidden relative group">
                             <img
