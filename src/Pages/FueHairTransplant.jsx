@@ -5,6 +5,7 @@ import FAQsPage from "./FAQsPage";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Transformations from "@/components/Tranformations";
+import FAQs from "@/components/FAQs";
 const FueHairTransplant = () => {
     return(
         <div>
@@ -13,7 +14,7 @@ const FueHairTransplant = () => {
             badge="Fue Hair Transplant"
             height="h-[365px]"
             />
-                 <section className="py-16">
+            <section className="py-16">
                   <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
                     
                     {/* Left Image */}
@@ -38,9 +39,9 @@ const FueHairTransplant = () => {
                       </p>
                     </div>
                   </div>
-                </section>
+            </section>
             <Transformations/>
-            <FAQsPage/>
+            <FAQs/>
             <Banner/>
             <Footer/>
         </div>
