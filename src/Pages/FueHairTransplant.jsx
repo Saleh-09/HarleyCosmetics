@@ -6,10 +6,10 @@ import FAQsPage from "./FAQsPage";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import Step1 from "../assets/Step 1.svg";
-import Step2 from "../assets/Step 2.svg";
-import Step3 from "../assets/Step 3.svg";
-import Step4 from "../assets/Step 4.svg";
+import Step1 from "../assets/Step1.svg";
+import Step2 from "../assets/Step2.svg";
+import Step3 from "../assets/Step3.svg";
+import Step4 from "../assets/Step4.svg";
 const FueHairTransplant = () => {
     return(
         <div>
