@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlogsPage = () => {
+const BlogsDetailsPage = () => {
     return(
         <main className="max-w-2xl mx-auto px-6 py-16">
             <article className="space-y-8">
@@ -91,3 +91,4 @@ const BlogsPage = () => {
         </main>
     )
 }
+export default BlogsDetailsPage
