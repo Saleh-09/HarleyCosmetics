@@ -1,7 +1,6 @@
 import HeroHeader from "@/components/HeroHeader";
 import React from "react";
 import FueImage from "../assets/FueImage.svg";
-import Transformations from "@/components/Tranformations";
 import FAQsPage from "./FAQsPage";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
@@ -10,6 +9,7 @@ import Step1 from "../assets/Step1.svg";
 import Step2 from "../assets/Step2.svg";
 import Step3 from "../assets/Step3.svg";
 import Step4 from "../assets/Step4.svg";
+import Transformations from "@/components/Tranformations";
 const FueHairTransplant = () => {
     return(
         <div>
@@ -23,8 +23,7 @@ const FueHairTransplant = () => {
                 alt="FUE Hair Transplant"
                 subtitle="Treatment"
                 title="Fue Hair Transplant Treatment"
-                description="FUE (Follicular Unit Extraction) offers a modern solution for hair restoration, 
-                delivering natural-looking results with minimal downtime and no visible scars."
+                description="FUE (Follicular Unit Extraction) offers a modern solution for hair restoration, delivering natural-looking results with minimal downtime and no visible scars."
             />
             <div className="max-w-7xl mx-auto px-4 mb-15">
                       {/* Features Badge */}
@@ -47,7 +46,7 @@ const FueHairTransplant = () => {
                             <div className="w-23 h-23 bg-gray-100 rounded-full flex items-center justify-center">
                                 <img
                                     src={Step1}
-                                    alt="Logo"
+                                    alt="step1"
                                     className="h-14 w-auto" 
                                />
                             </div>
@@ -64,7 +63,7 @@ const FueHairTransplant = () => {
                             <div className="w-23 h-23 bg-gray-100 rounded-full flex items-center justify-center">
                                 <img
                                     src={Step2}
-                                    alt="Logo"
+                                    alt="step2"
                                     className="h-14 w-auto" 
                                />
                             </div>
@@ -80,7 +79,7 @@ const FueHairTransplant = () => {
                             <div className="w-23 h-23 bg-gray-100 rounded-full flex items-center justify-center">
                                 <img
                                     src={Step3}
-                                    alt="Logo"
+                                    alt="step3"
                                     className="h-14 w-auto" 
                                />
                             </div>
@@ -96,7 +95,7 @@ const FueHairTransplant = () => {
                             <div className="w-23 h-23 bg-gray-100 rounded-full flex items-center justify-center">
                                 <img
                                     src={Step4}
-                                    alt="Logo"
+                                    alt="step4"
                                     className="h-14 w-auto" 
                                />
                             </div>
