@@ -8,6 +8,7 @@ import About from './Pages/About';
 import OurDoctors from './Pages/OurDoctors';
 import FAQsPage from './Pages/FAQsPage';
 import ContactUs from './Pages/ContactUs';
+import Blogs from './Pages/Blogs';
 
 function FloatingButton() {
   const location = useLocation();
@@ -50,6 +51,8 @@ function App() {
             <Route path="/doctors" element={< OurDoctors />} />
             <Route path="/faqs" element={<FAQsPage/>} />
             <Route path="/contact" element={<ContactUs/>} />
+            <Route path="/blog" element={<Blogs/>} />
+            <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
 
           {/* Floating Button (hidden on contact page) */}
