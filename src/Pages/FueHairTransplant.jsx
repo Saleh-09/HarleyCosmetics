@@ -128,9 +128,9 @@ const FueHairTransplant = () => {
               </div>          
             </div>            
             <Transformations/>
-            <FAQs/>
-            </div>
+            <FAQs/>            
             <Banner/>
+            </div>
             <Footer/>
         </div>
     )
