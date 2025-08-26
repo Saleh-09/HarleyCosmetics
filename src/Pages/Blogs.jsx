@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/card"
 import React from "react";
 import haircare from "../assets/haircare.png"
+import HeroHeader from "@/components/HeroHeader";
 
 const blogPosts = [
   {
@@ -21,7 +22,7 @@ const blogPosts = [
     title: "Essential Hair Care Tips for Healthy, Shiny Hair",
     description:
       "Discover the secrets to beautiful, healthy hair with these simple yet effective tips for nourishment, gentle care, and smart styling.",
-    image:{haircare},
+    image: haircare,
     date: "April 15, 2024",
   },
 ]
@@ -31,7 +32,7 @@ const Blogs = () => {
     return(
       <div>
         <HeroHeader
-            title="Insights, Tips, and the Latest in Hair Restoration Care"
+           title="Insights, Tips, and the Latest in Hair Restoration Care"
             badge="Blogs"
             height="h-[365px]"
         />
