@@ -19,6 +19,7 @@ const About = () => {
             />
             <WhyChooseUs
             image={ClinicImage}
+            alt="Hair Transplant Clinic"
             subtitle="Why Choose Us"
             title="Welcome To Hair Transplant Center"
             description="At our Hair Transplant Center, we provide world-class treatments with 

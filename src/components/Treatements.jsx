@@ -28,7 +28,7 @@ const Treatments = () => {
                            Minimally invasive procedure using follicular unit extraction for natural, permanent hair restoration.
                         </p>
                         <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
-                            <Link to="/treatment/1" className="flex items-center justify-center gap-2">
+                            <Link to="/treatment/fue-hair-transplant" className="flex items-center justify-center gap-2">
                                 <p className="text-[15px]">Explore More</p>
                                 <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
                             </Link>

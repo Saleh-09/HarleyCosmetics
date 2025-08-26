@@ -10,6 +10,7 @@ import FAQsPage from './Pages/FAQsPage';
 import ContactUs from './Pages/ContactUs';
 import Blogs from './Pages/Blogs';
 import BlogsDetailsPage from './Pages/BlogDetailsPage';
+import FueHairTransplant from './Pages/FueHairTransplant';
 
 function FloatingButton() {
   const location = useLocation();
@@ -54,6 +55,7 @@ function App() {
             <Route path="/contact" element={<ContactUs/>} />
             <Route path="/blog" element={<Blogs/>} />
             <Route path="/blog/:id" element={<BlogsDetailsPage />} />
+            <Route path="/treatment/fue-hair-transplant" element={<FueHairTransplant />} />
           </Routes>
 
           {/* Floating Button (hidden on contact page) */}
