@@ -20,7 +20,7 @@ const FueHairTransplant = () => {
                     <div className="flex-shrink-0">
                       <img
                         src={FueImage}
-                        alt={alt}
+                        alt="FueImage"
                         className="w-[350px] h-[261px] md:w-[648px] md:h-[491px] object-cover rounded-2xl shadow-lg"
                       />
                     </div>
