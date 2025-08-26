@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 import Transformations from "@/components/Tranformations";
 import FAQs from "@/components/FAQs";
 import Step1 from "../assets/Step1.svg"
+import Step2 from "../assets/Step2.svg"
+import Step3 from "../assets/Step3.svg"
+import Step4 from "../assets/Step4.svg"
 const FueHairTransplant = () => {
     return(
         <div className="w-screen min-h-screen overflow-x-hidden bg-white"> 
