@@ -1,11 +1,11 @@
 import HeroHeader from "@/components/HeroHeader";
 import React from "react";
 import FueImage from "../assets/FueImage.svg";
-import FAQsPage from "./FAQsPage";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 import Transformations from "@/components/Tranformations";
 import FAQs from "@/components/FAQs";
+import Step1 from "../assets/Step1.svg"
 const FueHairTransplant = () => {
     return(
         <div>
@@ -14,7 +14,7 @@ const FueHairTransplant = () => {
             badge="Fue Hair Transplant"
             height="h-[365px]"
             />
-            <section className="py-16">
+          <section className="py-16">
                   <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
                     
                     {/* Left Image */}
@@ -39,7 +39,26 @@ const FueHairTransplant = () => {
                       </p>
                     </div>
                   </div>
-            </section>
+          </section>
+          {/* Features Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-10">
+            {/* Feature Card 1 */}
+            <div className="bg-white w-[314px] max-w-full mx-auto rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex justify-center mb-6">
+                <div className="w-23 h-23 bg-gray-100 rounded-full flex items-center justify-center">
+                    <img
+                        src={Step1}
+                        alt="step1"
+                        className="h-14 w-auto" 
+                   />
+                </div>
+              </div>
+              <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Experienced Surgeons</h3>
+              <p className="text-gray-600 text-center leading-relaxed">
+                15+ years in hair restoration with proven expertise
+              </p>
+            </div>
+          </div>            
             <Transformations/>
             <FAQs/>
             <Banner/>

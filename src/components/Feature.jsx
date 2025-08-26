@@ -14,7 +14,7 @@ const Features =() => {
 
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#141219] mb-4">Why Choose Elite Harley Cosmetics</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#141219] mb-4">Why Choose Harley Cosmetics</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Watch videos showcasing the remarkable results achieved by our skilled surgeons.
             </p>
