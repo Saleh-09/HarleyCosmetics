@@ -4,7 +4,7 @@ import People from "../assets/people.svg"
 import Gurantee from "../assets/Gurantee.png"
 import DentalChair from "../assets/dental-chair.svg"
 
-const Features =({ number, title, description }) => {
+const Features =() => {
     return(
         <div className="max-w-7xl mx-auto px-4 mb-15">
           {/* Features Badge */}
