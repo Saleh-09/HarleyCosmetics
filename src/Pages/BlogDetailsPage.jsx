@@ -1,8 +1,11 @@
 import React from "react";
-
+import haircare from "../assets/haircare.jpg";
+import Banner from "@/components/Banner";
+import Footer from "@/components/Footer";
 const BlogsDetailsPage = () => {
     return(
-        <main className="max-w-2xl mx-auto px-6 py-16">
+        <div>
+            <main className="max-w-2xl mx-auto px-6 py-16">
             <article className="space-y-8">
                 {/* Header */}
                 <header className="space-y-4">
@@ -15,7 +18,7 @@ const BlogsDetailsPage = () => {
                 {/* Introduction */}
                 <div className="space-y-6 text-foreground leading-relaxed">
                 <p>
-                    Healthy, shiny hair is more than just a beauty goal—it reflects how well you care for yourself inside and
+                    Healthy, shiny hair is more than just a beauty goal it reflects how well you care for yourself inside and
                     out. From the food you eat to the way you wash and style, every little habit contributes to the strength and
                     glow of your hair. Here are three simple yet effective areas to focus on.
                 </p>
@@ -30,7 +33,7 @@ const BlogsDetailsPage = () => {
                     minerals gives your hair the fuel it needs to grow strong and healthy. Foods like eggs, nuts, salmon,
                     spinach, and berries provide essential nutrients that support growth and reduce breakage.
                     </p>
-                    <p>And don't forget water—hydration is just as important for your scalp as it is for your skin.</p>
+                    <p>And don't forget water hydration is just as important for your scalp as it is for your skin.</p>
                 </div>
                 </section>
 
@@ -53,7 +56,7 @@ const BlogsDetailsPage = () => {
                 {/* Featured Image */}
                 <div className="my-12">
                 <img
-                    src="/woman-with-beautiful-healthy-hair-using-natural-ha.png"
+                    src={haircare}
                     alt="Woman with healthy, shiny hair applying natural hair care products"
                     className="w-full h-auto rounded-lg shadow-sm"
                 />
@@ -89,6 +92,10 @@ const BlogsDetailsPage = () => {
                 </div>
             </article>
         </main>
+        <Banner/>
+        <Footer/>
+        </div>
+        
     )
 }
 export default BlogsDetailsPage
