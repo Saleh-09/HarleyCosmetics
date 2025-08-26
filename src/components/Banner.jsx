@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
     return (
             <div className="flex items-center justify-center min-h-[400px]">
-            <section className="py-16 w-[1250px] bg-[#3C2031] overflow-hidden rounded-[20px]">
+            <section className="py-10 w-[1250px] bg-[#3C2031] overflow-hidden rounded-[20px]">
                 <div className="max-w-7xl mx-auto px-10 relative z-10">
                 <div className="flex flex-col items-center justify-center text-center gap-6">
                     
@@ -28,7 +28,6 @@ const Banner = () => {
                     Book Free Consultation
                     <ArrowRight className="w-5 h-5" />
                     </Link>
-
                 </div>
                 </div>
             </section>
