@@ -5,12 +5,13 @@ import Transformations from "@/components/Tranformations";
 import FAQsPage from "./FAQsPage";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
+import WhyChooseUs from "@/components/WhyChooseUs";
 const FueHairTransplant = () => {
     return(
         <div>
             <HeroHeader
-            title="Insights, Tips, and the Latest in Hair Restoration Care"
-            badge="Blogs"
+            title="Personalized Hair Transplant Solutions for Lasting, Natural Results"
+            badge="Fue Hair Transplant"
             height="h-[365px]"
             />
             <WhyChooseUs
