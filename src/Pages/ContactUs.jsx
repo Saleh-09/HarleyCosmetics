@@ -102,13 +102,55 @@ const ContactUs = () => {
                         </select>
                         <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
                     </div>
+                    
+                    <label htmlFor="consultationMedium" className="block text-sm font-medium text-gray-700 mb-2">
+                        How You Found Us
+                    </label>
+                    <div className="relative">
+                        <select
+                        id="consultationMedium"
+                        name="consultationMedium"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all appearance-none bg-white"
+                        >
+                        <option value="">Choose Source</option>
+                        <option value="whatsapp">Twitter</option>
+                        <option value="zoom">Google Ads</option>
+                        </select>
+                        <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
                     </div>
+                    
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-2">
+                        Preferred Date
+                        </label>
+                        <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all"
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="time" className="block text-sm font-medium text-gray-700 mb-2">
+                        Preferred Time
+                        </label>
+                        <input
+                        type="time"
+                        id="time"
+                        name="time"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all"
+                        />
+                    </div>
+</div>
 
                     {/* Message Field */}
                     <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                         Message
                     </label>
+
                     <textarea
                         id="message"
                         name="message"
