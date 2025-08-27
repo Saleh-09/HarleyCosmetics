@@ -32,11 +32,11 @@ const Navbar = () =>{
     return(
         <header>
              {/* Top Contact Bar */}
-            <div className="bg-[#3C2031] text-white py-4">
+            <div className="bg-[#3C2031] text-[#FCD9A1] py-4">
                 <div className="max-w-7xl mx-auto px-4 flex justify-center items-center gap-8 whitespace-nowrap overflow-x-auto">
                 <div className="flex items-center gap-2 no-underline">
                      <Phone className="w-4 h-4" />
-                    <span className="text-[14px] lg:text-[17px]">+44 565 6721</span>
+                    <span className="text-[13px] lg:text-[17px]">+44 565 6721</span>
                 </div>
                 </div>
             </div>
