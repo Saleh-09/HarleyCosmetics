@@ -1,0 +1,181 @@
+import React from "react";
+import { useState } from "react";
+import { X } from "lucide-react";
+const FloatingConsultationButton = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false)
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    postcode: "",
+    treatment: "",
+    consultationMedium: "",
+    heardAboutUs: "",
+    message: "",
+  })
+
+  // ✅ Fixed: No TypeScript annotations
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    // Handle form submission here
+    setIsModalOpen(false);
+    // Reset form
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      postcode: "",
+      treatment: "",
+      consultationMedium: "",
+      heardAboutUs: "",
+      message: "",
+    });
+  };
+
+    return(
+        <>
+      {/* Floating Button */}
+      <button
+        onClick={() => setIsModalOpen(true)}
+        className="fixed bottom-6 right-6 bg-[#5d3a5d] hover:bg-[#4a2e4a] text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 font-medium text-sm md:text-base"
+      >
+        Book Free Consultation
+      </button>
+
+      {/* Modal Overlay */}
+      {isModalOpen && (
+        <div className="fixed bottom-20 right-6 z-50 max-h-[calc(100vh-8rem)]">
+          {/* Modal Content */}
+          <div className="bg-white rounded-xl w-96 max-w-[calc(100vw-2rem)] shadow-2xl border border-gray-200">
+            {/* Modal Header */}
+            <div className="flex justify-between items-center p-6 pb-4">
+              <h2 className="text-gray-800 text-xl font-bold text-center flex-1">Book Your Free Consultation</h2>
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="text-gray-600 hover:text-gray-800 transition-colors"
+              >
+                <X size={24} />
+              </button>
+            </div>
+
+            {/* Modal Form */}
+            <form onSubmit={handleSubmit} className="px-6 pb-6 space-y-4 max-h-80 overflow-y-auto">
+              {/* Full Name */}
+              <input
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
+              />
+
+              {/* Email */}
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
+              />
+
+              {/* Phone Number */}
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                value={formData.phone}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
+              />
+
+              {/* Postcode */}
+              <input
+                type="text"
+                name="postcode"
+                placeholder="Postcode"
+                value={formData.postcode}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
+              />
+
+              {/* Treatment Dropdown */}
+              <select
+                name="treatment"
+                value={formData.treatment}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent appearance-none cursor-pointer"
+              >
+                <option value="">Select Treatment</option>
+                <option value="fue-hair-transplant">Fue Hair Transplant</option>
+                <option value="beard-transplant">Beard Transplant</option>
+                <option value="eyebrow-transplant">Eyebrow Transplant</option>
+                <option value="afro-hair-transplant">Afro Hair Transplant</option>
+                <option value="female-hair-loss">Female Hair Loss</option>
+                <option value="un-shaven-hair-transplant">Un-Shaven Hair Transplant</option>
+              </select>
+
+              {/* Consultation Medium */}
+              <select
+                name="consultationMedium"
+                value={formData.consultationMedium}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent appearance-none cursor-pointer"
+              >
+                <option value="">Preferred Consultation Medium</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="zoom">Zoom</option>
+              </select>
+
+              {/* Heard About Us */}
+              <select
+                name="heardAboutUs"
+                value={formData.heardAboutUs}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent appearance-none cursor-pointer"
+              >
+                <option value="">How did you hear about us?</option>
+                <option value="google-ads">Google Ads</option>
+                <option value="twitter">Twitter</option>
+                <option value="instagram">Instagram</option>
+              </select>
+
+              {/* Message */}
+              <textarea
+                name="message"
+                placeholder="Your Message (Optional)"
+                value={formData.message}
+                onChange={handleInputChange}
+                rows={3}
+                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent resize-none"
+              />
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 mt-6"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+    </>
+    )
+}
+export default FloatingConsultationButton
