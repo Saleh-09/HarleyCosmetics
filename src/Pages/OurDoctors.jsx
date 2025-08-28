@@ -1,11 +1,11 @@
 import HeroHeader from "@/components/HeroHeader";
 import React from "react";
-import DrZakar from "../assets/DoctorImages/Dr.ZakarRafiq.png";
-import DrHaider from "../assets/DoctorImages/Dr.HaiderGillani.png";
-import DrMahdi from "../assets/DoctorImages/Dr.MahdiAlosert.png";
-import DrMasood from "../assets/DoctorImages/Dr.MasoodMunir.png";
-import DrSami from "../assets/DoctorImages/Dr.SamiMirza.png";
-import DrShuaib from "../assets/DoctorImages/Dr.ShuaibMir.png";
+import DrZakar from "../assets/DoctorImages/Dr.ZakarRafiq.svg";
+import DrHaider from "../assets/DoctorImages/Dr.HaiderGillani.svg";
+import DrMahdi from "../assets/DoctorImages/Dr.MahdiAlosert.svg";
+import DrMasood from "../assets/DoctorImages/Dr.MasoodMunir.svg";
+import DrSami from "../assets/DoctorImages/Dr.SamiMirza.svg";
+import DrShuaib from "../assets/DoctorImages/Dr.ShuaibMir.svg";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 
