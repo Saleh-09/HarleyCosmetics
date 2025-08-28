@@ -51,7 +51,7 @@ function FloatingButton() {
             </button>
 
             <h2 className="text-xl font-semibold text-[#3C2031] mb-4">
-              Book Your Free Consultation
+              Book Free Consultation
             </h2>
 
             <form className="space-y-4">
