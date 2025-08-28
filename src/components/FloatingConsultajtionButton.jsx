@@ -44,8 +44,8 @@ const FloatingConsultationButton = () => {
       <button
         onClick={() => setIsModalOpen(true)}
         className="
-          fixed bottom-6 right-6 
-          sm:left-1/2 sm:-translate-x-1/2 sm:right-auto 
+          fixed bottom-6 left-1/2 -translate-x-1/2 
+          md:right-6 md:left-auto md:translate-x-0
           bg-[#3C2031] hover:bg-[#533547] text-[#FCD9A1] 
           px-9 py-7 rounded-full shadow-lg hover:shadow-xl 
           transition-all duration-300 z-50 font-medium text-[15px] md:text-base
@@ -57,8 +57,8 @@ const FloatingConsultationButton = () => {
       {/* Modal Overlay */}
       {isModalOpen && (
         <div className="
-          fixed bottom-20 right-6 
-          sm:inset-0 sm:flex sm:items-center sm:justify-center 
+          fixed inset-0 flex items-center justify-center 
+          md:inset-auto md:bottom-20 md:right-6 md:block 
           z-50 max-h-[calc(100vh-8rem)]
         ">
           {/* Modal Content */}
