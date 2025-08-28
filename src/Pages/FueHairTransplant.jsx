@@ -17,9 +17,8 @@ const FueHairTransplant = () => {
             badge="Fue Hair Transplant"
             height="h-[365px]"
             />
-            <div className="max-w-7xl mx-auto px-6">
-              {/* Why Choose Section */}
-              <section className="py-16">
+            {/* Why Choose Section */}
+            <section className="py-16">
                   <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
                     
                     {/* Left Image */}
@@ -44,9 +43,9 @@ const FueHairTransplant = () => {
                       </p>
                     </div>
                   </div>
-              </section>
-              {/* How It Works Section */}
-              <div className="max-w-7xl mx-auto px-4 mb-15">
+            </section>
+            {/* How It Works Section */}
+            <div className="max-w-7xl mx-auto px-4 mb-15">
                 {/* Features Badge */}
                 <div className="flex justify-center mb-8">
                   <span className="bg-[#3C2031] text-[#FCD9A1]  px-6 py-4 rounded-full text-sm font-medium">Steps</span>
@@ -126,10 +125,11 @@ const FueHairTransplant = () => {
                   </p>
                 </div>
               </div>          
-            </div>            
+            </div>        
             <Transformations/>
-            <FAQs/>            
-            <Banner/>
+            <div className="max-w-7xl mx-auto px-6"> 
+              <FAQs/>            
+              <Banner/>
             </div>
             <Footer/>
         </div>
