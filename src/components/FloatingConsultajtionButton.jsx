@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { X } from "lucide-react";
+import { X, ChevronDown } from "lucide-react";
 const FloatingConsultationButton = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
   const [formData, setFormData] = useState({
@@ -43,7 +43,7 @@ const FloatingConsultationButton = () => {
       {/* Floating Button */}
       <button
         onClick={() => setIsModalOpen(true)}
-        className="fixed bottom-6 right-6 bg-[#5d3a5d] hover:bg-[#4a2e4a] text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 font-medium text-sm md:text-base"
+        className="fixed bottom-6 right-6 bg-[#3C2031] hover:bg-[#533547] text-[#FCD9A1] px-9 py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 font-medium text-[15px] md:text-base"
       >
         Book Free Consultation
       </button>
@@ -126,6 +126,7 @@ const FloatingConsultationButton = () => {
                 <option value="female-hair-loss">Female Hair Loss</option>
                 <option value="un-shaven-hair-transplant">Un-Shaven Hair Transplant</option>
               </select>
+              <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none" />
 
               {/* Consultation Medium */}
               <select
@@ -139,6 +140,7 @@ const FloatingConsultationButton = () => {
                 <option value="whatsapp">WhatsApp</option>
                 <option value="zoom">Zoom</option>
               </select>
+              <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none" />
 
               {/* Heard About Us */}
               <select
@@ -153,6 +155,7 @@ const FloatingConsultationButton = () => {
                 <option value="twitter">Twitter</option>
                 <option value="instagram">Instagram</option>
               </select>
+              <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none" />
 
               {/* Message */}
               <textarea
@@ -167,7 +170,7 @@ const FloatingConsultationButton = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 mt-6"
+                className="w-full bg-[#3C2031] hover:bg-[#533547] text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 mt-6"
               >
                 Submit
               </button>
