@@ -43,14 +43,24 @@ const FloatingConsultationButton = () => {
       {/* Floating Button */}
       <button
         onClick={() => setIsModalOpen(true)}
-        className="fixed bottom-6 right-6 bg-[#3C2031] hover:bg-[#533547] text-[#FCD9A1] px-9 py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 font-medium text-[15px] md:text-base"
+        className="
+          fixed bottom-6 right-6 
+          sm:left-1/2 sm:-translate-x-1/2 sm:right-auto 
+          bg-[#3C2031] hover:bg-[#533547] text-[#FCD9A1] 
+          px-9 py-7 rounded-full shadow-lg hover:shadow-xl 
+          transition-all duration-300 z-50 font-medium text-[15px] md:text-base
+        "
       >
         Book Free Consultation
       </button>
 
       {/* Modal Overlay */}
       {isModalOpen && (
-        <div className="fixed bottom-20 right-6 z-50 max-h-[calc(100vh-8rem)]">
+        <div className="
+          fixed bottom-20 right-6 
+          sm:inset-0 sm:flex sm:items-center sm:justify-center 
+          z-50 max-h-[calc(100vh-8rem)]
+        ">
           {/* Modal Content */}
           <div className="bg-white rounded-xl w-96 max-w-[calc(100vw-2rem)] shadow-2xl border border-gray-200">
             {/* Modal Header */}
@@ -129,7 +139,7 @@ const FloatingConsultationButton = () => {
               </select>
               <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none" />
               </div>
-              
+
               {/* Consultation Medium */}
               <div className="relative">
                 <select
