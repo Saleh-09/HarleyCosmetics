@@ -13,16 +13,15 @@ import FueHairTransplant from './Pages/FueHairTransplant';
 
 function FloatingButton() {
   const location = useLocation();
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  // Hide button on Contact Us page
   if (location.pathname === "/contact") return null;
 
   return (
     <>
       {/* Floating Button */}
       <button
-        onClick={() => setOpen(true)}
+        onClick={() => setIsOpen(true)}
         className="
           fixed bottom-4 
           right-1/2 translate-x-1/2
@@ -38,91 +37,96 @@ function FloatingButton() {
         <ArrowRight className="w-5 h-5" />
       </button>
 
-      {/* Popup Form */}
-      {open && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
-          <div className="bg-white rounded-2xl shadow-2xl p-6 w-[90%] max-w-lg relative">
-            {/* Close Button */}
-            <button
-              className="absolute top-3 right-3 text-gray-500 hover:text-black"
-              onClick={() => setOpen(false)}
-            >
-              <X className="w-6 h-6" />
-            </button>
+      {/* Popup Modal */}
+      {isOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 px-4">
+          <div className="bg-white rounded-2xl w-full max-w-lg shadow-2xl">
+            {/* Header (fixed at top of modal) */}
+            <div className="flex justify-between items-center border-b px-6 py-4 sticky top-0 bg-white rounded-t-2xl z-10">
+              <h2 className="text-xl font-semibold text-[#3C2031]">
+                Book Free Consultation
+              </h2>
+              <button onClick={() => setIsOpen(false)}>
+                <X className="w-6 h-6 text-gray-500 hover:text-gray-700" />
+              </button>
+            </div>
 
-            <h2 className="text-xl font-semibold text-[#3C2031] mb-4">
-              Book Free Consultation
-            </h2>
-
-            <form className="space-y-4">
+            {/* Scrollable form */}
+            <div className="px-6 py-4 space-y-4 max-h-[70vh] overflow-y-auto">
               {/* Name */}
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full border rounded-lg px-4 py-2"
-              />
-              {/* Email */}
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full border rounded-lg px-4 py-2"
-              />
-              {/* Phone */}
-              <input
-                type="text"
-                placeholder="Phone Number"
-                className="w-full border rounded-lg px-4 py-2"
-              />
-              {/* Postal Code */}
-              <input
-                type="text"
-                placeholder="Postal Code"
-                className="w-full border rounded-lg px-4 py-2"
-              />
-              {/* Treatment Dropdown */}
-              <select className="w-full border rounded-lg px-4 py-2">
-                <option value="">Select Treatment</option>
-                <option>Fue Hair Transplant</option>
-                <option>Beard Transplant</option>
-                <option>Eyebrow Transplant</option>
-                <option>Afro Hair Transplant</option>
-                <option>Female Hair Loss</option>
-                <option>Un-Shaven Hair Transplant</option>
-              </select>
-              {/* Consultation Medium */}
-              <select className="w-full border rounded-lg px-4 py-2">
-                <option value="">Preferred Medium</option>
-                <option>Whatsapp</option>
-                <option>Zoom</option>
-              </select>
-              {/* Heard About Us */}
-              <select className="w-full border rounded-lg px-4 py-2">
-                <option value="">How did you hear about us?</option>
-                <option>Google Ads</option>
-                <option>Twitter</option>
-                <option>Instagram</option>
-              </select>
-              {/* Message */}
-              <textarea
-                placeholder="Message"
-                className="w-full border rounded-lg px-4 py-2"
-                rows="3"
-              ></textarea>
+              <div>
+                <label className="block text-sm font-medium text-[#7985A0]">Name</label>
+                <input type="text" className="mt-1 w-full border rounded-lg px-3 py-2" />
+              </div>
 
-              {/* Submit */}
-              <button
-                type="submit"
-                className="w-full bg-[#3C2031] text-white font-semibold py-2 rounded-lg hover:bg-[#5a2f47]"
-              >
+              {/* Email */}
+              <div>
+                <label className="block text-sm font-medium text-[#7985A0]">Email</label>
+                <input type="email" className="mt-1 w-full border rounded-lg px-3 py-2" />
+              </div>
+
+              {/* Phone Number */}
+              <div>
+                <label className="block text-sm font-medium text-[#7985A0]">Phone Number</label>
+                <input type="tel" className="mt-1 w-full border rounded-lg px-3 py-2" />
+              </div>
+
+              {/* Postal Code */}
+              <div>
+                <label className="block text-sm font-medium text-[#7985A0]">Postal Code</label>
+                <input type="text" className="mt-1 w-full border rounded-lg px-3 py-2" />
+              </div>
+
+              {/* Treatment Dropdown */}
+              <div>
+                <label className="block text-sm font-medium text-[#7985A0]">Treatment</label>
+                <select className="mt-1 w-full border rounded-lg px-3 py-2">
+                  <option>Fue Hair Transplant</option>
+                  <option>Beard Transplant</option>
+                  <option>Eyebrow Transplant</option>
+                  <option>Afro Hair Transplant</option>
+                  <option>Female Hair Loss</option>
+                  <option>Un-Shaven Hair Transplant</option>
+                </select>
+              </div>
+
+              {/* Consultation Medium */}
+              <div>
+                <label className="block text-sm font-medium text-[#7985A0]">Consultation Medium</label>
+                <select className="mt-1 w-full border rounded-lg px-3 py-2">
+                  <option>Whatsapp</option>
+                  <option>Zoom</option>
+                </select>
+              </div>
+
+              {/* Heard About Us */}
+              <div>
+                <label className="block text-sm font-medium text-[#7985A0]">How did you hear about us?</label>
+                <select className="mt-1 w-full border rounded-lg px-3 py-2">
+                  <option>Google Ads</option>
+                  <option>Twitter</option>
+                  <option>Instagram</option>
+                </select>
+              </div>
+
+              {/* Message */}
+              <div>
+                <label className="block text-sm font-medium text-[#7985A0]">Message</label>
+                <textarea className="mt-1 w-full border rounded-lg px-3 py-2" rows="4"></textarea>
+              </div>
+
+              {/* Submit Button */}
+              <button className="w-full bg-[#3C2031] text-white py-3 rounded-lg hover:bg-[#5a2e47]">
                 Submit
               </button>
-            </form>
+            </div>
           </div>
         </div>
       )}
     </>
   );
 }
+
 function App() {
   return (
     <div>
