@@ -125,29 +125,29 @@ const ContactUs = () => {
                     
                     </div>
                     <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                        <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-2">
-                        Preferred Date
-                        </label>
-                        <input
-                        type="date"
-                        id="date"
-                        name="date"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all"
-                        />
+                        <div>
+                            <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-2">
+                            Preferred Date
+                            </label>
+                            <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all"
+                            />
+                        </div>
+                        <div>
+                            <label htmlFor="time" className="block text-sm font-medium text-gray-700 mb-2">
+                            Preferred Time
+                            </label>
+                            <input
+                            type="time"
+                            id="time"
+                            name="time"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all"
+                            />
+                        </div>
                     </div>
-                    <div>
-                        <label htmlFor="time" className="block text-sm font-medium text-gray-700 mb-2">
-                        Preferred Time
-                        </label>
-                        <input
-                        type="time"
-                        id="time"
-                        name="time"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all"
-                        />
-                    </div>
-</div>
 
                     {/* Message Field */}
                     <div>
