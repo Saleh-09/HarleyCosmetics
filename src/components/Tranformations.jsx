@@ -1,7 +1,10 @@
 import React from "react";
-import FirstTransformation from "../assets/Tranformation1.svg"
-import Vertical from "../assets/PatientImages/Vertifcal Frames.png"
-import Horizontal from "../assets/PatientImages/Horizontal Frames.png"
+import Patient1 from "../assets/Patient1.svg";
+import Patient2 from "../assets/Patient2.svg";
+import Patient3 from "../assets/Patient3.svg";
+import Patient4 from "../assets/Patient4.svg";
+import Patient5 from "../assets/Patient5.svg";
+import Patient6 from "../assets/Patient6.svg";
 const Transformations=()=>{
     return(
         <div className="max-w-7xl mx-auto px-4 mb-15">
@@ -14,8 +17,8 @@ const Transformations=()=>{
             </div>
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div>
-                    <img className="mb-3"
-                      src={FirstTransformation}
+                    <img className="mb-3 roun"
+                      src={Patient1}
                       alt="firstTranformation"
                     />
                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
@@ -24,9 +27,9 @@ const Transformations=()=>{
                     </p>
                 </div>
 
-                <div className="border rounded-[10px]">
+                <div>
                     <img className="mb-3"
-                      src={Vertical}
+                      src={Patient2}
                       alt="firstTranformation"
                     />
                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
@@ -35,9 +38,9 @@ const Transformations=()=>{
                     </p>
                 </div>
 
-                <div className="border rounded-[10px]">
+                <div>
                     <img className="mb-3"
-                      src={Horizontal}
+                      src={Patient3}
                       alt="firstTranformation"
                     />
                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
@@ -48,7 +51,7 @@ const Transformations=()=>{
 
                  <div>
                     <img className="mb-3"
-                      src={FirstTransformation}
+                      src={Patient4}
                       alt="firstTranformation"
                     />
                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Beard Transplant</h2>
@@ -59,7 +62,7 @@ const Transformations=()=>{
 
                 <div>
                     <img className="mb-3"
-                      src={FirstTransformation}
+                      src={Patient5}
                       alt="firstTranformation"
                     />
                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Beard Transplant</h2>
@@ -70,7 +73,7 @@ const Transformations=()=>{
 
                 <div>
                     <img className="mb-3"
-                      src={FirstTransformation}
+                      src={Patient6}
                       alt="firstTranformation"
                     />
                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Beard Transplant</h2>
