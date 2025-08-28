@@ -65,7 +65,7 @@ const FloatingConsultationButton = () => {
           <div className="bg-white rounded-xl w-96 max-w-[calc(100vw-2rem)] shadow-2xl border border-gray-200">
             {/* Modal Header */}
             <div className="flex justify-between items-center p-6 pb-4">
-              <h2 className="text-gray-800 text-xl font-bold text-center flex-1">Book Your Free Consultation</h2>
+              <h2 className="text-gray-800 text-xl font-bold text-center flex-1">Book Free Consultation</h2>
               <button
                 onClick={() => setIsModalOpen(false)}
                 className="text-gray-600 hover:text-gray-800 transition-colors"
