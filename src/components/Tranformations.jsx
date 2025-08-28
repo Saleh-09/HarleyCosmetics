@@ -24,7 +24,7 @@ const Transformations=()=>{
                     </p>
                 </div>
 
-                <div>
+                <div className="border rounded-[10px]">
                     <img className="mb-3"
                       src={Vertical}
                       alt="firstTranformation"
@@ -35,7 +35,7 @@ const Transformations=()=>{
                     </p>
                 </div>
 
-                <div>
+                <div className="border rounded-[10px]">
                     <img className="mb-3"
                       src={Horizontal}
                       alt="firstTranformation"
