@@ -22,30 +22,30 @@ const ContactUs = () => {
                 <div className="space-y-6">
                     {/* Name Fields */}
                     <div className="grid md:grid-cols-2 gap-4">
-                    <div>
-                        <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                        First name
-                        </label>
-                        <input
-                        type="text"
-                        id="firstName"
-                        name="firstName"
-                        placeholder="First name"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all"
-                        />
-                    </div>
-                    <div>
-                        <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                        Last name
-                        </label>
-                        <input
-                        type="text"
-                        id="lastName"
-                        name="lastName"
-                        placeholder="Last name"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all"
-                        />
-                    </div>
+                        <div>
+                            <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
+                            First name
+                            </label>
+                            <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="First name"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all"
+                            />
+                        </div>
+                        <div>
+                            <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
+                            Last name
+                            </label>
+                            <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Last name"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all"
+                            />
+                        </div>
                     </div>
 
                     {/* Email Field */}
@@ -102,21 +102,25 @@ const ContactUs = () => {
                         </select>
                         <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
                     </div>
-                    
-                    <label htmlFor="consultationMedium" className="block text-sm font-medium text-gray-700 mb-2">
+
+                    <div>
+                        <label htmlFor="Source" className="block text-sm font-medium text-gray-700 mb-2">
                         How You Found Us
-                    </label>
-                    <div className="relative">
-                        <select
-                        id="consultationMedium"
-                        name="consultationMedium"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all appearance-none bg-white"
-                        >
-                        <option value="">Choose Source</option>
-                        <option value="whatsapp">Twitter</option>
-                        <option value="zoom">Google Ads</option>
-                        </select>
-                        <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
+                        </label>
+                        <div className="relative">
+                            <select
+                            id="source"
+                            name="source"
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent outline-none transition-all appearance-none bg-white"
+                            >
+                            <option value="">Choose Source</option>
+                            <option value="whatsapp">Twitter</option>
+                            <option value="zoom">Google Ads</option>
+                            <option value="zoom">Instagram</option>
+                            <option value="zoom">Facebook</option>
+                            </select>
+                            <ChevronDown className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
+                        </div>
                     </div>
                     
                     </div>
