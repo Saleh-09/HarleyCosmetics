@@ -1,10 +1,10 @@
 import React from "react";
-import Patient1 from "../assets/Patient1.svg";
-import Patient2 from "../assets/Patient2.svg";
-import Patient3 from "../assets/Patient3.svg";
-import Patient4 from "../assets/Patient4.svg";
-import Patient5 from "../assets/Patient5.svg";
-import Patient6 from "../assets/Patient6.svg";
+import Patient1 from "../assets/PatientImages/Patient1.svg"
+import Patient2 from "../assets/PatientImages/Patient2.svg"
+import Patient3 from "../assets/PatientImages/Patient3.svg"
+import Patient4 from "../assets/PatientImages/Patient4.svg"
+import Patient5 from "../assets/PatientImages/Patient5.svg"
+import Patient6 from "../assets/PatientImages/Patient6.svg"
 const Transformations=()=>{
     return(
         <div className="max-w-7xl mx-auto px-4 mb-15">
