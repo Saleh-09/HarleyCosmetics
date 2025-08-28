@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react-router-dom";
+import React ,{useState} from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { ArrowRight, X } from "lucide-react";
 import Navbar from './components/Navbar';
 import Home from './Pages/Home';
