@@ -111,7 +111,8 @@ const FloatingConsultationButton = () => {
               />
 
               {/* Treatment Dropdown */}
-              <select
+              <div className="relative">
+                <select
                 name="treatment"
                 value={formData.treatment}
                 onChange={handleInputChange}
@@ -127,35 +128,41 @@ const FloatingConsultationButton = () => {
                 <option value="un-shaven-hair-transplant">Un-Shaven Hair Transplant</option>
               </select>
               <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none" />
-
+              </div>
+              
               {/* Consultation Medium */}
-              <select
-                name="consultationMedium"
-                value={formData.consultationMedium}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent appearance-none cursor-pointer"
-              >
-                <option value="">Preferred Consultation Medium</option>
-                <option value="whatsapp">WhatsApp</option>
-                <option value="zoom">Zoom</option>
-              </select>
-              <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none" />
-
+              <div className="relative">
+                <select
+                  name="consultationMedium"
+                  value={formData.consultationMedium}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent appearance-none cursor-pointer"
+                >
+                  <option value="">Preferred Consultation Medium</option>
+                  <option value="whatsapp">WhatsApp</option>
+                  <option value="zoom">Zoom</option>
+                </select>
+                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none" />
+              </div>
+             
               {/* Heard About Us */}
-              <select
-                name="heardAboutUs"
-                value={formData.heardAboutUs}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent appearance-none cursor-pointer"
-              >
-                <option value="">How did you hear about us?</option>
-                <option value="google-ads">Google Ads</option>
-                <option value="twitter">Twitter</option>
-                <option value="instagram">Instagram</option>
-              </select>
-              <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none" />
+              <div className="relative">
+                <select
+                  name="heardAboutUs"
+                  value={formData.heardAboutUs}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent appearance-none cursor-pointer"
+                >
+                  <option value="">How did you hear about us?</option>
+                  <option value="google-ads">Google Ads</option>
+                  <option value="twitter">Twitter</option>
+                  <option value="instagram">Instagram</option>
+                </select>
+                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none" />
+              </div>
+             
 
               {/* Message */}
               <textarea
