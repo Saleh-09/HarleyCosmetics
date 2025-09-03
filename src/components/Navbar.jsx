@@ -39,8 +39,8 @@ const Navbar = () =>{
                     <span className="text-[13px] lg:text-[17px]">+44 565 6721</span>
                 </div>
                 <div className="flex items-center gap-2 no-underline">
-                    <Link>
-                        <span className="text-[13px] lg:text-[17px]">Book free Consulation</span>
+                    <Link to="/contact">
+                        <span className="text-[13px] lg:text-[17px] underline">Book free Consulation</span>
                     </Link>
                 </div>
                 </div>
