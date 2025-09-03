@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/HarleyCosmticsLogo.png"
-import { Phone, ChevronDown, Menu, X} from "lucide-react"
+import { Phone, ChevronDown, Menu, X, ArrowRight} from "lucide-react"
 import { Link } from "react-router-dom";
 import { useState } from "react"
 
@@ -40,7 +40,8 @@ const Navbar = () =>{
                 </div>
                 <div className="flex items-center gap-2 no-underline">
                     <Link to="/contact">
-                        <span className="text-[13px] lg:text-[17px] underline">Book free Consulation</span>
+                        <span className="text-[13px] lg:text-[17px] underline-offset-2 ">Book free Consulation</span>
+                        <ArrowRight className="w-4 h-4"/>
                     </Link>
                 </div>
                 </div>
