@@ -20,16 +20,18 @@ function App() {
           {/* Navbar always visible */}
           <Navbar/>
           {/* Page Routes */}
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/about" element={< About />} />
-            <Route path="/doctors" element={< OurDoctors />} />
-            <Route path="/faqs" element={<FAQsPage/>} />
-            <Route path="/contact" element={<ContactUs/>} />
-            <Route path="/blog" element={<Blogs/>} />
-            <Route path="/blog/:id" element={<BlogsDetailsPage />} />
-            <Route path="/male/fue-hair-transplant" element={<FueHairTransplant />} />
-          </Routes>
+          <main className="pt-[120px]">
+             <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="/about" element={< About />} />
+                <Route path="/doctors" element={< OurDoctors />} />
+                <Route path="/faqs" element={<FAQsPage/>} />
+                <Route path="/contact" element={<ContactUs/>} />
+                <Route path="/blog" element={<Blogs/>} />
+                <Route path="/blog/:id" element={<BlogsDetailsPage />} />
+                <Route path="/male/fue-hair-transplant" element={<FueHairTransplant />} />
+              </Routes>
+          </main>
         </div>
         <FloatingConsultationButton/>
       </Router>

@@ -10,6 +10,8 @@ const Navbar = () =>{
     const [femaleDropdownOpen, setFemaleDropdownOpen] = useState(false)
     const [mobileMaleDropdownOpen, setMobileMaleDropdownOpen] = useState(false)
     const [mobileFemaleDropdownOpen, setMobileFemaleDropdownOpen] = useState(false)
+    const [isVisible, setIsVisible] = useState(true)
+    const [lastScrollY, setLastScrollY] = useState(0)
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen)
@@ -33,6 +35,7 @@ const Navbar = () =>{
         
         return () => window.removeEventListener('scroll', handleScroll)
     }, [lastScrollY])
+
     const maletreatments = [
         { name: "FUE Hair Transplant", path: "/male/fue-hair-transplant" },
         { name: "Beard Transplant", path: "/male/beard-transplant" },
@@ -49,7 +52,9 @@ const Navbar = () =>{
         { name: "Un-Shaven Hair Transplant", path: "/female/unshaven-hair-transplant" },
     ]
     return(
-        <header>
+        <header className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
+            isVisible ? 'translate-y-0' : '-translate-y-full'
+        }`}>
              {/* Top Contact Bar */}
            <div className="bg-[#3C2031] text-[#FCD9A1] py-4">
                 <div className="max-w-7xl mx-auto px-4 flex justify-center items-center gap-8 whitespace-nowrap overflow-x-auto">
