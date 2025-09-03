@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/Logo.svg"
+import Logo from "../assets/HarleyCosmticsLogo.png"
 import { Phone, ChevronDown, Menu, X} from "lucide-react"
 import { Link } from "react-router-dom";
 import { useState } from "react"
@@ -37,6 +37,11 @@ const Navbar = () =>{
                 <div className="flex items-center gap-2 no-underline">
                      <Phone className="w-4 h-4" />
                     <span className="text-[13px] lg:text-[17px]">+44 565 6721</span>
+                </div>
+                <div className="flex items-center gap-2 no-underline">
+                    <Link>
+                        <span className="text-[13px] lg:text-[17px]">Book free Consulation</span>
+                    </Link>
                 </div>
                 </div>
             </div>
