@@ -152,7 +152,7 @@ const Navbar = () =>{
                         className="text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900"
                         aria-label="Toggle mobile menu"
                         >
-                        {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                        {isMobileMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
                         </button>
                     </div>
                     </div>

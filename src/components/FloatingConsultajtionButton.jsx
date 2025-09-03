@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { X, ChevronDown } from "lucide-react";
 const FloatingConsultationButton = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false)
+const [isModalOpen, setIsModalOpen] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -48,7 +48,7 @@ const FloatingConsultationButton = () => {
           md:right-6 md:left-auto md:translate-x-0
           bg-[#3C2031] hover:bg-[#533547] text-[#FCD9A1] 
           px-9 py-7 rounded-full shadow-lg hover:shadow-xl 
-          transition-all duration-300 z-50 font-medium text-[15px] md:text-base
+          transition-all duration-300 z-50 font-medium text-base
         "
       >
         Book Free Consultation
