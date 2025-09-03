@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../assets/HarleyCosmticsLogo.png"
 import { Phone, ChevronDown, Menu, X, ArrowRight} from "lucide-react"
 import { Link } from "react-router-dom";
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const Navbar = () =>{
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -14,6 +14,25 @@ const Navbar = () =>{
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen)
     }
+    // Scroll handler for navbar visibility
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY
+            
+            // Show navbar when scrolling up, hide when scrolling down
+            if (currentScrollY < lastScrollY || currentScrollY < 100) {
+                setIsVisible(true)
+            } else {
+                setIsVisible(false)
+            }
+            
+            setLastScrollY(currentScrollY)
+        }
+
+        window.addEventListener('scroll', handleScroll, { passive: true })
+        
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [lastScrollY])
     const maletreatments = [
         { name: "FUE Hair Transplant", path: "/male/fue-hair-transplant" },
         { name: "Beard Transplant", path: "/male/beard-transplant" },
