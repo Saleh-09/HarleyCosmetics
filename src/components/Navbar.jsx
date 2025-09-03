@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/HarleyCosmticsLogo.png"
+import Logo from "../assets/HarleyCosmticsLogo.svg"
 import { Phone, ChevronDown, Menu, X, ArrowRight} from "lucide-react"
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react"
