@@ -12,12 +12,10 @@ const Home = () => {
     return(
         <div className="w-screen min-h-screen overflow-x-hidden">
         <HeroHeader 
-         title={
-            <>
-             Hair Transplants <br /> To Restore Your Natural <br /> Look
-            </>
-            }
-            subtitle="Our advanced hair transplant techniques deliver natural, lasting results restoring your confidence with fuller, healthier hair."
+            useVideo={true}
+            showOverlay={false}
+            showContent={false}
+            height="h-screen" // or your preferred height
         />
         <Features/>
         <Transformations/>

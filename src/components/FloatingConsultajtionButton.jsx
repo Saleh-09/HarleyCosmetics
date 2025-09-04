@@ -58,8 +58,8 @@ const [isModalOpen, setIsModalOpen] = useState(false)
       {isModalOpen && (
         <div className="
           fixed inset-0 flex items-center justify-center 
-          md:inset-auto md:bottom-20 md:right-6 md:block 
-          z-50 max-h-[calc(100vh-8rem)]
+          md:inset-auto bottom-10 md:bottom-20 md:right-6 md:block 
+          z-50 md:max-h-[calc(100vh-8rem)]
         ">
           {/* Modal Content */}
           <div className="bg-white rounded-xl w-96 max-w-[calc(100vw-2rem)] shadow-2xl border border-gray-200">

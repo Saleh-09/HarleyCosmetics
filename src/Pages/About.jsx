@@ -16,6 +16,9 @@ const About = () => {
             title="Trusted Experts Dedicated to Natural Hair Transformation"
             badge="Who We Are"
             height="h-[365px]"
+            useVideo={false}
+            showOverlay={true}
+            showContent={true}
             />
             <WhyChooseUs/>
             <Features/>
