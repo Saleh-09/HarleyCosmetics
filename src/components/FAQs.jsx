@@ -63,10 +63,8 @@ const FAQs = ({ limit }) => {
   return (
     <div>
       {/* Features Badge */}
-      <div className="flex justify-center mb-8">
-        <span className="bg-[#3C2031] text-[#FCD9A1] px-6 py-4 rounded-full text-sm font-medium">
-          FAQs
-        </span>
+      <div className="flex justify-center mb-4">
+          <span className="text-[#3C2031] text-[25px] font-semibold">FAQs</span>
       </div>
 
       {/* Section Header */}

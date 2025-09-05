@@ -1,6 +1,7 @@
 import React from "react";
 import Herobg from "../assets/HeroImage.png"
 import HarleyCosmeticsVideo from "../assets/Videos/HarleyCosmeticsVideo.mp4"
+import HarleyCosmeticsIntoPortrait from "../assets/Videos/HarleyCosmeticsIntroPortrait.mp4"
 
 const HeroHeader = ({ 
   title, 
@@ -17,16 +18,31 @@ const HeroHeader = ({
             
             {/* Video Background - only renders when useVideo is true */}
             {useVideo && (
-                <video
-                    className="absolute inset-0 w-full h-full object-cover"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                >
-                    <source src={HarleyCosmeticsVideo} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+                <>
+                    {/* Desktop Video - hidden on mobile */}
+                    <video
+                        className="absolute inset-0 w-full h-full object-cover hidden md:block"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                    >
+                        <source src={HarleyCosmeticsVideo} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                    {/* Mobile Video - hidden on desktop */}
+                    <video
+                        className="absolute inset-0 w-full h-full object-cover block md:hidden"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                    >
+                        <source src={HarleyCosmeticsIntoPortrait} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </>
             )}
 
             {/* Overlay - conditionally rendered */}

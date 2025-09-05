@@ -15,7 +15,7 @@ const Home = () => {
             useVideo={true}
             showOverlay={false}
             showContent={false}
-            height="h-screen" // or your preferred height
+            height="h-screen"
         />
         <Features/>
         <Transformations/>

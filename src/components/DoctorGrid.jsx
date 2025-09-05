@@ -4,8 +4,8 @@ import Doctor1 from "../assets/Doctor1.png"
 const DoctorGrid = () => {
     return(
         <div className="max-w-7xl mx-auto px-4 mb-15">
-            <div className="flex justify-center mb-8">
-                <span className="bg-[#3C2031] text-[#FCD9A1] px-6 py-4 rounded-full text-base font-medium">Surgeons</span>
+            <div className="flex justify-center mb-4">
+                <span className="text-[#3C2031] text-[25px] font-semibold">Surgeons</span>
             </div>
             <div className="text-center mb-12">
                 <h2 className="text-[#141219] font-bold text-4xl md:text-5xl mb-4">

@@ -6,8 +6,8 @@ const Testimonial = () => {
     return (
         <div className="max-w-7xl mx-auto px-4 mb-15">
             {/* Testimonial Badge */}
-            <div className="flex justify-center mb-8">
-                <span className="bg-[#3C2031] text-[#FCD9A1] px-6 py-4 rounded-full text-sm font-medium">Testimonials</span>
+            <div className="flex justify-center mb-4">
+                <span className="text-[#3C2031] text-[25px] font-semibold">Testimonials</span>
             </div>
             {/* Section Header */}
             <div className="text-center mb-12">

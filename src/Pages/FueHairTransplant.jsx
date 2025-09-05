@@ -46,9 +46,9 @@ const FueHairTransplant = () => {
             </section>
             {/* How It Works Section */}
             <div className="max-w-7xl mx-auto px-4 mb-15">
-                {/* Features Badge */}
-                <div className="flex justify-center mb-8">
-                  <span className="bg-[#3C2031] text-[#FCD9A1]  px-6 py-4 rounded-full text-sm font-medium">Steps</span>
+                {/* Steps Badge */}
+                <div className="flex justify-center mb-4">
+                    <span className="text-[#3C2031] text-[25px] font-semibold">Steps</span>
                 </div>
 
                 {/* Section Header */}

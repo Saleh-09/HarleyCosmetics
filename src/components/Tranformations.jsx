@@ -8,9 +8,11 @@ import Patient6 from "../assets/PatientImages/Patient6.svg"
 const Transformations=()=>{
     return(
         <div className="max-w-7xl mx-auto px-4 mb-15">
-            <div className="flex justify-center mb-8">
-                <span className="bg-[#3C2031] text-[#FCD9A1] px-6 py-4 rounded-full text-base font-medium">Befor vs After</span>
+            {/* Transformations Badge */}
+            <div className="flex justify-center mb-4">
+                <span className="text-[#3C2031] text-[25px] font-semibold">Transformations</span>
             </div>
+            {/* Section Header */}
             <div className="text-center mb-12">
                 <h2 className="text-[#141219] font-bold text-4xl md:text-5xl mb-4">See the Transformations for Yourself</h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">Every picture tells a story of renewed confidence and a fresh start, explore the visible difference of our  treatments.</p>
