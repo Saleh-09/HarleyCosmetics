@@ -10,6 +10,10 @@ import Blogs from './Pages/Blogs';
 import BlogsDetailsPage from './Pages/BlogDetailsPage';
 import FueHairTransplant from './Pages/FueHairTransplant';
 import FloatingConsultationButton from './components/FloatingConsultajtionButton';
+import BeardTransplant from './Pages/BeardTransplant';
+import AfroHairTransplant from './Pages/AfroHairTransplant';
+import EyeBrowTransplant from './Pages/EyeBrowTransplant';
+import UnShavenHairTransplant from './Pages/UnShavenHairTransplant';
 
 
 function App() {
@@ -30,6 +34,15 @@ function App() {
                 <Route path="/blog" element={<Blogs/>} />
                 <Route path="/blog/:id" element={<BlogsDetailsPage />} />
                 <Route path="/male/fue-hair-transplant" element={<FueHairTransplant />} />
+                <Route path="/male/beard-transplant" element={<BeardTransplant/>} />
+                <Route path='/male/afro-hair-transplant' element={<AfroHairTransplant/>} />
+                <Route path='/male/eyebrow-transplant' element={<EyeBrowTransplant/>} />
+                <Route path='/male/unshaven-hair-transplant' element={<UnShavenHairTransplant/>} />
+                <Route path="/female/fue-hair-transplant" element={<FueHairTransplant />} />
+                <Route path="/female/beard-transplant" element={<BeardTransplant/>} />
+                <Route path='/female/afro-hair-transplant' element={<AfroHairTransplant/>} />
+                <Route path='/female/eyebrow-transplant' element={<EyeBrowTransplant/>} />
+                <Route path='/female/unshaven-hair-transplant' element={<UnShavenHairTransplant/>} />
               </Routes>
           </main>
         </div>

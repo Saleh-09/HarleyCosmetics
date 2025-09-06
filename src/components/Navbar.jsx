@@ -39,7 +39,7 @@ const Navbar = () =>{
     const maletreatments = [
         { name: "FUE Hair Transplant", path: "/male/fue-hair-transplant" },
         { name: "Beard Transplant", path: "/male/beard-transplant" },
-        { name: "EyeBrow Transplant", path: "/male/eyebrow-transplant" },
+        { name: "Eyebrow Transplant", path: "/male/eyebrow-transplant" },
         { name: "Afro Hair Transplant", path: "/male/afro-hair-transplant" },
         { name: "Un-Shaven Hair Transplant", path: "/male/unshaven-hair-transplant" },
     ]
@@ -47,7 +47,7 @@ const Navbar = () =>{
     const femaletreatments = [
         { name: "FUE Hair Transplant", path: "/female/fue-hair-transplant" },
         { name: "Female Hair Transplant", path: "/female/female-hair-transplant" },
-        { name: "EyeBrow Transplant", path: "/female/eyebrow-transplant" },
+        { name: "Eyebrow Transplant", path: "/female/eyebrow-transplant" },
         { name: "Afro Hair Transplant", path: "/female/afro-hair-transplant" },
         { name: "Un-Shaven Hair Transplant", path: "/female/unshaven-hair-transplant" },
     ]
