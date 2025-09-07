@@ -81,7 +81,7 @@ const Features =() => {
                    />
                 </div>
               </div>
-              <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Natural Look Guaranteed</h3>
+              <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Natural Look </h3>
               <p className="text-gray-600 text-center leading-relaxed">
                 Seamless integration with your existing hair
               </p>

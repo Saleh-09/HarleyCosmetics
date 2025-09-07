@@ -79,7 +79,7 @@ const Treatments = () => {
                            Advanced solutions for women experiencing thinning or hair loss, restoring natural volume and hairline.
                         </p>
                         <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
-                            <Link to="/male/afro-hair-transplant" className="flex items-center justify-center gap-2 hover:cursor-pointer">
+                            <Link to="/female/female-hair-transplant" className="flex items-center justify-center gap-2 hover:cursor-pointer">
                                 <p className="text-[15px]">Explore More</p>
                                 <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
                             </Link>
@@ -110,7 +110,7 @@ const Treatments = () => {
                         <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
                             Un-Shaven Hair Transplant</h3>
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           Discreet procedure performed without shaving, ideal for maintaining your existing hairstyle.
+                           Discreate procedure performed without shaving, ideal for maintaining your existing hairstyle.
                         </p>
                         <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
                             <Link to="/male/unshaven-hair-transplant" className="flex items-center justify-center gap-2 hover:cursor-pointer">
@@ -118,7 +118,6 @@ const Treatments = () => {
                                 <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
                             </Link>
                         </Button>
-
                     </div>
                 </div>
                 

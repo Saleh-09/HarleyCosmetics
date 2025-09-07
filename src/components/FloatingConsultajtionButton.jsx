@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { X, ChevronDown } from "lucide-react";
+
 const FloatingConsultationButton = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -80,158 +81,188 @@ const FloatingConsultationButton = () => {
               style={{ maxHeight: "calc(90vh - 120px)" }}
             >
               {/* Full Name */}
-              <input
-                type="text"
-                name="name"
-                placeholder="Full Name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 
-                  bg-gray-50 text-gray-800 placeholder-[#38363D] 
-                  focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
-              />
-
-              {/* Email */}
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter Your Email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 
-                  bg-gray-50 text-gray-800 placeholder-[#38363D] 
-                  focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
-              />
-
-              {/* Phone */}
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                value={formData.phone}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 
-                  bg-gray-50 text-gray-800 placeholder-[#38363D] 
-                  focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
-              />
-
-              {/* Postcode */}
-              <input
-                type="text"
-                name="postcode"
-                placeholder="Postcode"
-                value={formData.postcode}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 
-                  bg-gray-50 text-gray-800 placeholder-[#38363D] 
-                  focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
-              />
-
-              {/* Preferred Date */}
-              <input
-                type="date"
-                name="preferredDate"
-                value={formData.preferredDate}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 
-                  bg-gray-50 text-gray-800 placeholder-[#38363D] 
-                  focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
-              />
-
-              {/* Preferred Time */}
-              <input
-                type="time"
-                name="preferredTime"
-                value={formData.preferredTime}
-                onChange={handleInputChange}
-                required
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 
-                  bg-gray-50 text-gray-800 placeholder-[#38363D] 
-                  focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
-              />
-
-              {/* Treatment */}
-              <div className="relative">
-                <select
-                  name="treatment"
-                  value={formData.treatment}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Full Name"
+                  value={formData.name}
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 
                     bg-gray-50 text-gray-800 placeholder-[#38363D] 
-                    focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] 
-                    focus:border-transparent appearance-none cursor-pointer"
-                >
-                  <option value="">Select Treatment</option>
-                  <option value="fue-hair-transplant">Fue Hair Transplant</option>
-                  <option value="beard-transplant">Beard Transplant</option>
-                  <option value="eyebrow-transplant">Eyebrow Transplant</option>
-                  <option value="afro-hair-transplant">Afro Hair Transplant</option>
-                  <option value="female-hair-loss">Female Hair Loss</option>
-                  <option value="un-shaven-hair-transplant">Un-Shaven Hair Transplant</option>
-                </select>
-                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 
-                  text-gray-500 pointer-events-none" size={20} />
+                    focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
+                />
+              </div>
+
+              {/* Email */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter Your Email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 
+                    bg-gray-50 text-gray-800 placeholder-[#38363D] 
+                    focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
+                />
+              </div>
+
+              {/* Phone */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 
+                    bg-gray-50 text-gray-800 placeholder-[#38363D] 
+                    focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
+                />
+              </div>
+
+              {/* Postcode */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Postcode</label>
+                <input
+                  type="text"
+                  name="postcode"
+                  placeholder="Postcode"
+                  value={formData.postcode}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 
+                    bg-gray-50 text-gray-800 placeholder-[#38363D] 
+                    focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
+                />
+              </div>
+
+              {/* Preferred Date */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Date</label>
+                <input
+                  type="date"
+                  name="preferredDate"
+                  value={formData.preferredDate}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 
+                    bg-gray-50 text-gray-800 focus:outline-none 
+                    focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
+                />
+              </div>
+
+              {/* Preferred Time */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Time</label>
+                <input
+                  type="time"
+                  name="preferredTime"
+                  value={formData.preferredTime}
+                  onChange={handleInputChange}
+                  required
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 
+                    bg-gray-50 text-gray-800 focus:outline-none 
+                    focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent"
+                />
+              </div>
+
+              {/* Treatment */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Treatment</label>
+                <div className="relative">
+                  <select
+                    name="treatment"
+                    value={formData.treatment}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 
+                      bg-gray-50 text-gray-800 focus:outline-none 
+                      focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent 
+                      appearance-none cursor-pointer"
+                  >
+                    <option value="">Select Treatment</option>
+                    <option value="fue-hair-transplant">Fue Hair Transplant</option>
+                    <option value="beard-transplant">Beard Transplant</option>
+                    <option value="eyebrow-transplant">Eyebrow Transplant</option>
+                    <option value="afro-hair-transplant">Afro Hair Transplant</option>
+                    <option value="female-hair-loss">Female Hair Loss</option>
+                    <option value="un-shaven-hair-transplant">Un-Shaven Hair Transplant</option>
+                  </select>
+                  <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 
+                    text-gray-500 pointer-events-none" size={20} />
+                </div>
               </div>
 
               {/* Consultation Medium */}
-              <div className="relative">
-                <select
-                  name="consultationMedium"
-                  value={formData.consultationMedium}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 
-                    bg-gray-50 text-gray-800 placeholder-[#38363D] 
-                    focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] 
-                    focus:border-transparent appearance-none cursor-pointer"
-                >
-                  <option value="">Preferred Consultation Medium</option>
-                  <option value="whatsapp">WhatsApp</option>
-                  <option value="zoom">Zoom</option>
-                </select>
-                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 
-                  text-gray-500 pointer-events-none" size={20} />
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Consultation Medium</label>
+                <div className="relative">
+                  <select
+                    name="consultationMedium"
+                    value={formData.consultationMedium}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 
+                      bg-gray-50 text-gray-800 focus:outline-none 
+                      focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent 
+                      appearance-none cursor-pointer"
+                  >
+                    <option value="">Select Medium</option>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="zoom">Zoom</option>
+                  </select>
+                  <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 
+                    text-gray-500 pointer-events-none" size={20} />
+                </div>
               </div>
 
               {/* Heard About Us */}
-              <div className="relative">
-                <select
-                  name="heardAboutUs"
-                  value={formData.heardAboutUs}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 
-                    bg-gray-50 text-gray-800 placeholder-[#38363D] 
-                    focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] 
-                    focus:border-transparent appearance-none cursor-pointer"
-                >
-                  <option value="">How did you hear about us?</option>
-                  <option value="google-ads">Google Ads</option>
-                  <option value="twitter">Twitter</option>
-                  <option value="instagram">Instagram</option>
-                </select>
-                <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 
-                  text-gray-500 pointer-events-none" size={20} />
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">How did you hear about us?</label>
+                <div className="relative">
+                  <select
+                    name="heardAboutUs"
+                    value={formData.heardAboutUs}
+                    onChange={handleInputChange}
+                    required
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 
+                      bg-gray-50 text-gray-800 focus:outline-none 
+                      focus:ring-2 focus:ring-[#5d3a5d] focus:border-transparent 
+                      appearance-none cursor-pointer"
+                  >
+                    <option value="">Select an option</option>
+                    <option value="google-ads">Google Ads</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="instagram">Instagram</option>
+                  </select>
+                  <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 
+                    text-gray-500 pointer-events-none" size={20} />
+                </div>
               </div>
 
               {/* Message */}
-              <textarea
-                name="message"
-                placeholder="Your Message (Optional)"
-                value={formData.message}
-                onChange={handleInputChange}
-                rows={3}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 
-                  bg-gray-50 text-gray-800 placeholder-[#38363D] 
-                  focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] 
-                  focus:border-transparent resize-none"
-              />
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Message (Optional)</label>
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  rows={3}
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 
+                    bg-gray-50 text-gray-800 placeholder-[#38363D] 
+                    focus:outline-none focus:ring-2 focus:ring-[#5d3a5d] 
+                    focus:border-transparent resize-none"
+                />
+              </div>
 
               {/* Submit */}
               <button
@@ -249,4 +280,5 @@ const FloatingConsultationButton = () => {
     </>
   );
 };
-export default FloatingConsultationButton
+
+export default FloatingConsultationButton;

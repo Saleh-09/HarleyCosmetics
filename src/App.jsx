@@ -14,6 +14,7 @@ import BeardTransplant from './Pages/BeardTransplant';
 import AfroHairTransplant from './Pages/AfroHairTransplant';
 import EyeBrowTransplant from './Pages/EyeBrowTransplant';
 import UnShavenHairTransplant from './Pages/UnShavenHairTransplant';
+import FemaleHairTransplant from './Pages/FemaleHairTransplant';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
                 <Route path='/female/afro-hair-transplant' element={<AfroHairTransplant/>} />
                 <Route path='/female/eyebrow-transplant' element={<EyeBrowTransplant/>} />
                 <Route path='/female/unshaven-hair-transplant' element={<UnShavenHairTransplant/>} />
+                <Route path='/female/female-hair-transplant' element={<FemaleHairTransplant/>} />
               </Routes>
           </main>
         </div>
