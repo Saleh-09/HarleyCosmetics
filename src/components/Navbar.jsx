@@ -55,8 +55,8 @@ const Navbar = () =>{
         <header className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
             isVisible ? 'translate-y-0' : '-translate-y-full'
         }`}>
-             {/* Top Contact Bar */}
-           <div className="bg-[#3C2031] text-[#FCD9A1] py-4">
+             {/* Top Contact Bar 
+             <div className="bg-[#3C2031] text-[#FCD9A1] py-4">
                 <div className="max-w-7xl mx-auto px-4 flex justify-center items-center gap-8 whitespace-nowrap overflow-x-auto">
                     <div className="flex items-center gap-2">
                         <Phone className="w-4 h-4 flex-shrink-0" />
@@ -67,8 +67,10 @@ const Navbar = () =>{
                         <ArrowRight className="w-4 h-4 flex-shrink-0"/>
                     </Link>
                 </div>
-            </div>
-            <nav className="bg-white w-full shadow-sm no-underline">
+            </div>                 
+            */}
+           
+            <nav className="bg-white w-full shadow-md no-underline">
                 <div className="mx-4 lg:mx-10">
                     <div className="flex items-center justify-between h-16">
                     {/* Logo */}

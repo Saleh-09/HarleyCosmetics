@@ -24,7 +24,7 @@ function App() {
           {/* Navbar always visible */}
           <Navbar/>
           {/* Page Routes */}
-          <main className="pt-[120px]">
+          <main className="pt-[10px]">
              <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/about" element={< About />} />
