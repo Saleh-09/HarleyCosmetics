@@ -25,7 +25,7 @@ const Transformations=()=>{
                     />
                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
                     <p className="text-gray-600 text-center leading-relaxed">
-                        2,000 Grafts| Donor Area: Back of scalp | Result Time: 8 Months
+                        Donor Area: Back of scalp | Result Time: 8 Months
                     </p>
                 </div>
 
@@ -36,7 +36,7 @@ const Transformations=()=>{
                     />
                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
                     <p className="text-gray-600 text-center leading-relaxed">
-                        2,000 Grafts| Donor Area: Back of scalp | Result Time: 8 Months
+                        Donor Area: Back of scalp | Result Time: 8 Months
                     </p>
                 </div>
 
@@ -47,7 +47,7 @@ const Transformations=()=>{
                     />
                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
                     <p className="text-gray-600 text-center leading-relaxed">
-                        2,000 Grafts| Donor Area: Back of scalp | Result Time: 8 Months
+                        Donor Area: Back of scalp | Result Time: 8 Months
                     </p>
                 </div>
 
@@ -58,7 +58,7 @@ const Transformations=()=>{
                     />
                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
                     <p className="text-gray-600 text-center leading-relaxed">
-                        2,000 Grafts| Donor Area: Back of scalp | Result Time: 8 Months
+                        Donor Area: Back of scalp | Result Time: 8 Months
                     </p>
                 </div>
 
@@ -69,7 +69,7 @@ const Transformations=()=>{
                     />
                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
                     <p className="text-gray-600 text-center leading-relaxed">
-                        2,000 Grafts| Donor Area: Back of scalp | Result Time: 8 Months
+                        Donor Area: Back of scalp | Result Time: 8 Months
                     </p>
                 </div>
 
@@ -80,7 +80,7 @@ const Transformations=()=>{
                     />
                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
                     <p className="text-gray-600 text-center leading-relaxed">
-                        2,000 Grafts| Donor Area: Back of scalp | Result Time: 8 Months
+                        Donor Area: Back of scalp | Result Time: 8 Months
                     </p>
                 </div>
             </div>

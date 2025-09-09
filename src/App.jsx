@@ -15,6 +15,7 @@ import AfroHairTransplant from './Pages/AfroHairTransplant';
 import EyeBrowTransplant from './Pages/EyeBrowTransplant';
 import UnShavenHairTransplant from './Pages/UnShavenHairTransplant';
 import FemaleHairTransplant from './Pages/FemaleHairTransplant';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
@@ -22,10 +23,11 @@ function App() {
     <div>
       <Router>
         <div className="w-screen min-h-screen overflow-x-hidden">
+          <ScrollToTop/>
           {/* Navbar always visible */}
-          <Navbar/>
+          <Navbar/>          
           {/* Page Routes */}
-          <main className="pt-[10px]">
+          <main className="pt-16">
              <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/about" element={< About />} />

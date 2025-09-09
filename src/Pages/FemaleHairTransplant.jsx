@@ -9,6 +9,7 @@ import Step1 from "../assets/Step1.svg"
 import Step2 from "../assets/Step2.svg"
 import Step3 from "../assets/Step3.svg"
 import Step4 from "../assets/Step4.svg"
+import { useEffect } from "react";
 
 const FemaleHairTransplant = () => {
     return (
