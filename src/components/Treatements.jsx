@@ -27,12 +27,13 @@ const Treatments = () => {
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
                            Minimally invasive procedure using follicular unit extraction for natural, permanent hair restoration.
                         </p>
-                        <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
-                            <Link to="/male/fue-hair-transplant" className="flex items-center justify-center gap-2 hover:cursor-pointer">
-                                <p className="text-[15px]">Explore More</p>
-                                <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
-                            </Link>
-                        </Button>
+                        <Link 
+                            to="/male/fue-hair-transplant" 
+                            className="w-[280px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 hover:cursor-pointer"
+                        >
+                            <p className="text-[15px]">Explore More</p>
+                            <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
+                        </Link>
 
                     </div>
                 </div>
@@ -44,13 +45,13 @@ const Treatments = () => {
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
                            Enhances facial hair density and symmetry with precise graft placement for a fuller, natural beard.
                         </p>
-                        <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
-                            <Link to="/male/beard-transplant" className="flex items-center justify-center gap-2 hover:cursor-pointer">
-                                <p className="text-[15px]">Explore More</p>
-                                <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
-                            </Link>
-                        </Button>
-
+                        <Link 
+                            to="/male/beard-transplant" 
+                            className="w-[280px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 hover:cursor-pointer"
+                        >
+                            <p className="text-[15px]">Explore More</p>
+                            <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
+                        </Link>
                     </div>
                 </div>
                 {/* Treatment Card 3*/}
@@ -61,13 +62,13 @@ const Treatments = () => {
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
                            Restores thin or patchy eyebrows with meticulous follicle implantation for a natural, defined look.
                         </p>
-                        <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
-                            <Link to="/male/eyebrow-transplant" className="flex items-center justify-center gap-2 hover:cursor-pointer">
-                                <p className="text-[15px]">Explore More</p>
-                                <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
-                            </Link>
-                        </Button>
-
+                        <Link 
+                            to="/male/eyebrow-transplant" 
+                            className="w-[280px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 hover:cursor-pointer"
+                        >
+                            <p className="text-[15px]">Explore More</p>
+                            <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
+                        </Link>
                     </div>
                 </div>
                 {/* Treatment Card 4*/}
@@ -78,13 +79,13 @@ const Treatments = () => {
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
                            Advanced solutions for women experiencing thinning or hair loss, restoring natural volume and hairline.
                         </p>
-                        <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
-                            <Link to="/female/female-hair-transplant" className="flex items-center justify-center gap-2 hover:cursor-pointer">
-                                <p className="text-[15px]">Explore More</p>
-                                <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
-                            </Link>
-                        </Button>
-
+                        <Link 
+                            to="/male/eyebrow-transplant" 
+                            className="w-[280px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 hover:cursor-pointer"
+                        >
+                            <p className="text-[15px]">Explore More</p>
+                            <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
+                        </Link>
                     </div>
                 </div>
                 {/* Treatment Card 5*/}
@@ -95,13 +96,13 @@ const Treatments = () => {
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
                            Specialised technique tailored for Afro-Caribbean hair, ensuring natural curl pattern and density.
                         </p>
-                        <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
-                            <Link to="/male/afro-hair-transplant" className="flex items-center justify-center gap-2 hover:cursor-pointer">
-                                <p className="text-[15px]">Explore More</p>
-                                <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
-                            </Link>
-                        </Button>
-
+                        <Link 
+                            to="/male/afro-hair-transplant" 
+                            className="w-[280px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 hover:cursor-pointer"
+                        >
+                            <p className="text-[15px]">Explore More</p>
+                            <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
+                        </Link>
                     </div>
                 </div>
                 {/* Treatment Card 6*/}
@@ -112,12 +113,13 @@ const Treatments = () => {
                         <p className="text-gray-600 text-center leading-relaxed mb-6">
                            Discreate procedure performed without shaving, ideal for maintaining your existing hairstyle.
                         </p>
-                        <Button className="w-[310px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2">
-                            <Link to="/male/unshaven-hair-transplant" className="flex items-center justify-center gap-2 hover:cursor-pointer">
-                                <p className="text-[15px]">Explore More</p>
-                                <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
-                            </Link>
-                        </Button>
+                        <Link 
+                            to="/male/unshaven-hair-transplant" 
+                            className="w-[280px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 hover:cursor-pointer"
+                        >
+                            <p className="text-[15px]">Explore More</p>
+                            <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
+                        </Link>
                     </div>
                 </div>
                 

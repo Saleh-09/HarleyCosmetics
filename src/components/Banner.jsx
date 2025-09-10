@@ -25,7 +25,7 @@ const Banner = () => {
                     to="/contact"
                     className="bg-[#FCD9A1] hover:bg-yellow-500 text-[#3C2031] font-semibold px-8 py-3 rounded-2xl text-lg flex items-center gap-2 shadow-lg"
                     >
-                    Book Free Consultation
+                    Contact Us
                     <ArrowRight className="w-5 h-5" />
                     </Link>
                 </div>

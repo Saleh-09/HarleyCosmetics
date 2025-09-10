@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../assets/HarleyCosmticsLogo.svg"
 import { Phone, ChevronDown, Menu, X, ArrowRight} from "lucide-react"
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 
 const Navbar = () =>{
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -12,10 +12,58 @@ const Navbar = () =>{
     const [mobileFemaleDropdownOpen, setMobileFemaleDropdownOpen] = useState(false)
     const [isVisible, setIsVisible] = useState(true)
     const [lastScrollY, setLastScrollY] = useState(0)
+    
+    // Refs for dropdown containers
+    const maleDropdownRef = useRef(null)
+    const femaleDropdownRef = useRef(null)
+    
+    // Timers for delayed closing
+    const maleTimerRef = useRef(null)
+    const femaleTimerRef = useRef(null)
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen)
     }
+
+    // Improved hover handlers with delay
+    const handleMaleMouseEnter = () => {
+        if (maleTimerRef.current) {
+            clearTimeout(maleTimerRef.current)
+        }
+        setMaleDropdownOpen(true)
+    }
+
+    const handleMaleMouseLeave = () => {
+        maleTimerRef.current = setTimeout(() => {
+            setMaleDropdownOpen(false)
+        }, 150) // 150ms delay before closing
+    }
+
+    const handleFemaleMouseEnter = () => {
+        if (femaleTimerRef.current) {
+            clearTimeout(femaleTimerRef.current)
+        }
+        setFemaleDropdownOpen(true)
+    }
+
+    const handleFemaleMouseLeave = () => {
+        femaleTimerRef.current = setTimeout(() => {
+            setFemaleDropdownOpen(false)
+        }, 150) // 150ms delay before closing
+    }
+
+    // Cleanup timers on unmount
+    useEffect(() => {
+        return () => {
+            if (maleTimerRef.current) {
+                clearTimeout(maleTimerRef.current)
+            }
+            if (femaleTimerRef.current) {
+                clearTimeout(femaleTimerRef.current)
+            }
+        }
+    }, [])
+
     // Scroll handler for navbar visibility
     useEffect(() => {
         const handleScroll = () => {
@@ -51,6 +99,7 @@ const Navbar = () =>{
         { name: "Afro Hair Transplant", path: "/female/afro-hair-transplant" },
         { name: "Un-Shaven Hair Transplant", path: "/female/unshaven-hair-transplant" },
     ]
+
     return(
         <header className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${
             isVisible ? 'translate-y-0' : '-translate-y-full'
@@ -83,68 +132,72 @@ const Navbar = () =>{
                     {/* Desktop Navigation Menu */}
                     <div className="hidden md:flex items-center space-x-8">
                         <div
-                        className="relative"
-                        onMouseEnter={() => setMaleDropdownOpen(true)}
-                        onMouseLeave={() => setMaleDropdownOpen(false)}
+                            ref={maleDropdownRef}
+                            className="relative"
+                            onMouseEnter={handleMaleMouseEnter}
+                            onMouseLeave={handleMaleMouseLeave}
                         >
-                        <div className="flex items-center gap-1 text-gray-700 hover:text-[#3C2031] cursor-pointer">
-                            <span>Male Treatment</span>
-                            <ChevronDown className="w-4 h-4" />
-                        </div>
-                        {maleDropdownOpen && (
-                            <div className="absolute top-full left-0 mt-1 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-50">
-                            <div className="py-2">
-                                {maletreatments.map((treatment, index) => (
-                                <Link
-                                    key={index}
-                                    to={treatment.path}
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#3C2031]"
-                                >
-                                    {treatment.name}
-                                </Link>
-                                ))}
+                            <div className="flex items-center gap-1 text-gray-700 hover:text-[#3C2031] cursor-pointer py-2">
+                                <span>Male Treatment</span>
+                                <ChevronDown className="w-4 h-4" />
                             </div>
-                            </div>
-                        )}
+                            {maleDropdownOpen && (
+                                <div className="absolute top-full left-0 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-50">
+                                    <div className="py-2">
+                                        {maletreatments.map((treatment, index) => (
+                                            <Link
+                                                key={index}
+                                                to={treatment.path}
+                                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#3C2031] transition-colors duration-150"
+                                                onClick={() => setMaleDropdownOpen(false)}
+                                            >
+                                                {treatment.name}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                         </div>
 
                         <div
-                        className="relative"
-                        onMouseEnter={() => setFemaleDropdownOpen(true)}
-                        onMouseLeave={() => setFemaleDropdownOpen(false)}
+                            ref={femaleDropdownRef}
+                            className="relative"
+                            onMouseEnter={handleFemaleMouseEnter}
+                            onMouseLeave={handleFemaleMouseLeave}
                         >
-                        <div className="flex items-center gap-1 text-gray-700 hover:text-gray-900 cursor-pointer">
-                            <span>Female Treatment</span>
-                            <ChevronDown className="w-4 h-4" />
-                        </div>
-                        {femaleDropdownOpen && (
-                            <div className="absolute top-full left-0 mt-1 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-50">
-                            <div className="py-2">
-                                {femaletreatments.map((treatment, index) => (
-                                <Link
-                                    key={index}
-                                    to={treatment.path}
-                                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                                >
-                                    {treatment.name}
-                                </Link>
-                                ))}
+                            <div className="flex items-center gap-1 text-gray-700 hover:text-[#3C2031] cursor-pointer py-2">
+                                <span>Female Treatment</span>
+                                <ChevronDown className="w-4 h-4" />
                             </div>
-                            </div>
-                        )}
+                            {femaleDropdownOpen && (
+                                <div className="absolute top-full left-0 w-64 bg-white border border-gray-200 rounded-md shadow-lg z-50">
+                                    <div className="py-2">
+                                        {femaletreatments.map((treatment, index) => (
+                                            <Link
+                                                key={index}
+                                                to={treatment.path}
+                                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#3C2031] transition-colors duration-150"
+                                                onClick={() => setFemaleDropdownOpen(false)}
+                                            >
+                                                {treatment.name}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                         </div>
 
-                        <Link to="/about" className="text-gray-700 hover:text-gray-900">
-                        About Us
+                        <Link to="/about" className="text-gray-700 hover:text-[#3C2031] py-2">
+                            About Us
                         </Link>
-                        <Link to="/doctors" className="text-gray-700 hover:text-gray-900">
-                        Our Doctors
+                        <Link to="/doctors" className="text-gray-700 hover:text-[#3C2031] py-2">
+                            Our Doctors
                         </Link>
-                        <Link to="/blog" className="text-gray-700 hover:text-gray-900">
-                        Blog
+                        <Link to="/blog" className="text-gray-700 hover:text-[#3C2031] py-2">
+                            Blog
                         </Link>
-                        <Link to="/faqs" className="text-gray-700 hover:text-gray-900">
-                        FAQs
+                        <Link to="/faqs" className="text-gray-700 hover:text-[#3C2031] py-2">
+                            FAQs
                         </Link>
                     </div>
 
@@ -192,7 +245,7 @@ const Navbar = () =>{
                         {/* Mobile Female Treatment Dropdown */}
                         <div>
                             <div
-                            className="flex items-center justify-between text-gray-700 hover:text-gray-900 cursor-pointer px-3 py-2 rounded-md"
+                            className="flex items-center justify-between text-gray-700 hover:text-[#3C2031] cursor-pointer px-3 py-2 rounded-md"
                             onClick={() => setMobileFemaleDropdownOpen(!mobileFemaleDropdownOpen)}
                             >
                             <span>Female Treatment</span>
@@ -206,7 +259,7 @@ const Navbar = () =>{
                                 <Link
                                     key={index}
                                     to={treatment.path}
-                                    className="block text-sm text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md"
+                                    className="block text-sm text-gray-600 hover:text-[#3C2031] px-3 py-2 rounded-md"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {treatment.name}
@@ -218,28 +271,28 @@ const Navbar = () =>{
 
                         <Link
                             to="/about"
-                            className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
+                            className="block text-gray-700 hover:text-[#3C2031] px-3 py-2 rounded-md"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             About Us
                         </Link>
                         <Link
                             to="/doctors"
-                            className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
+                            className="block text-gray-700 hover:text-[#3C2031] px-3 py-2 rounded-md"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             Our Doctors
                         </Link>
                         <Link
                             to="/blog"
-                            className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
+                            className="block text-gray-700 hover:text-[#3C2031] px-3 py-2 rounded-md"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             Blog
                         </Link>
                         <Link
                             to="/faqs"
-                            className="block text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
+                            className="block text-gray-700 hover:text-[#3C2031] px-3 py-2 rounded-md"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             FAQs

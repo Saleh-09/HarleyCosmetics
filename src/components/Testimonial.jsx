@@ -21,110 +21,65 @@ const Testimonial = () => {
             {/* Testimonial Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Testimonial Card 1 */}
-                <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-                    {/* Video Thumbnail */}
-                    <div className="relative aspect-video bg-gray-200">
-                        <img
-                        src={TestimonialVideo}
-                        alt="Patient testimonial video"
-                        className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                        <button className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
-                            <Play className="w-6 h-6 text-[#5d3a5d]  ml-1" />
-                        </button>
-                        </div>
-                    </div>
-
+                <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden h-fit">
                     {/* Card Content */}
-                    <div className="p-6 ">
-                        <div className="flex items-center justify-between mb-2">
-                            <h3 className="text-lg font-semibold text-gray-900 mb-2">James Smith</h3>
-
+                    <div className="p-6 py-8">
+                        <div className="flex items-start justify-between mb-4">
+                            <h3 className="text-lg font-semibold text-gray-900">James Smith</h3>
                             {/* Rating */}
-                            <div className="flex items-center gap-1 mb-4">
-                            {[...Array(5)].map((_, i) => (
-                                <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                            ))}
+                            <div className="flex items-center gap-1">
+                                {[...Array(5)].map((_, i) => (
+                                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                                ))}
                             </div>
                         </div>
                         
                         {/* Testimonial Text */}
-                        <p className="text-gray-600 leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
-                        Pellentesque sit amet sapien fringilla, mattis ligula consectetur.
+                        <p className="text-gray-600 text-justify leading-relaxed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
+                            Pellentesque sit amet sapien fringilla, mattis ligula consectetur.
                         </p>
                     </div>
                 </div>
                 {/* Testimonial Card 2 */}
-                <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-                    {/* Video Thumbnail */}
-                    <div className="relative aspect-video bg-gray-200">
-                        <img
-                        src={TestimonialVideo}
-                        alt="Patient testimonial video"
-                        className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                        <button className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
-                            <Play className="w-6 h-6 text-[#5d3a5d]  ml-1" />
-                        </button>
-                        </div>
-                    </div>
-
+                <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden h-fit">
                     {/* Card Content */}
-                    <div className="p-6 ">
-                        <div className="flex items-center justify-between mb-2">
-                            <h3 className="text-lg font-semibold text-gray-900 mb-2">James Smith</h3>
-
+                    <div className="p-6 py-8">
+                        <div className="flex items-start justify-between mb-4">
+                            <h3 className="text-lg font-semibold text-gray-900">James Smith</h3>
                             {/* Rating */}
-                            <div className="flex items-center gap-1 mb-4">
-                            {[...Array(5)].map((_, i) => (
-                                <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                            ))}
+                            <div className="flex items-center gap-1">
+                                {[...Array(5)].map((_, i) => (
+                                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                                ))}
                             </div>
                         </div>
                         
                         {/* Testimonial Text */}
-                        <p className="text-gray-600 leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
-                        Pellentesque sit amet sapien fringilla, mattis ligula consectetur.
+                        <p className="text-gray-600 text-justify leading-relaxed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
+                            Pellentesque sit amet sapien fringilla, mattis ligula consectetur.
                         </p>
                     </div>
                 </div>
                 {/* Testimonial Card 3 */}
-                <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-                    {/* Video Thumbnail */}
-                    <div className="relative aspect-video bg-gray-200">
-                        <img
-                        src={TestimonialVideo}
-                        alt="Patient testimonial video"
-                        className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 flex items-center justify-center">
-                        <button className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow">
-                            <Play className="w-6 h-6 text-[#5d3a5d]  ml-1" />
-                        </button>
-                        </div>
-                    </div>
-
+                <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden h-fit">
                     {/* Card Content */}
-                    <div className="p-6 ">
-                        <div className="flex items-center justify-between mb-2">
-                            <h3 className="text-lg font-semibold text-gray-900 mb-2">James Smith</h3>
-
+                    <div className="p-6 py-8">
+                        <div className="flex items-start justify-between mb-4">
+                            <h3 className="text-lg font-semibold text-gray-900">James Smith</h3>
                             {/* Rating */}
-                            <div className="flex items-center gap-1 mb-4">
-                            {[...Array(5)].map((_, i) => (
-                                <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                            ))}
+                            <div className="flex items-center gap-1">
+                                {[...Array(5)].map((_, i) => (
+                                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                                ))}
                             </div>
                         </div>
                         
                         {/* Testimonial Text */}
-                        <p className="text-gray-600 leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
-                        Pellentesque sit amet sapien fringilla, mattis ligula consectetur.
+                        <p className="text-gray-600 text-justify leading-relaxed">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
+                            Pellentesque sit amet sapien fringilla, mattis ligula consectetur.
                         </p>
                     </div>
                 </div>
