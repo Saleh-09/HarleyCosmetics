@@ -34,7 +34,7 @@ const Steps = ()=> {
                   </div>
                   <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Consultation</h3>
                   <p className="text-gray-600 text-center leading-relaxed">
-                       Personalized hair analysis and treatment planning.
+                    We begin with a detailed consultation to assess your hair loss concerns and design a treatment plan tailored to your goals.
                   </p>
                 </div>
                 {/* Step Card 2 */}
@@ -49,9 +49,9 @@ const Steps = ()=> {
                     </div>
                     
                   </div>
-                  <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Consultation</h3>
+                  <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Extraction</h3>
                   <p className="text-gray-600 text-center leading-relaxed">
-                       Personalized hair analysis and treatment planning.
+                    Healthy hair follicles are carefully extracted using modern FUE techniques to ensure precision and minimal scarring.
                   </p>
                 </div>
                 {/* Step Card 3 */}
@@ -66,9 +66,9 @@ const Steps = ()=> {
                     </div>
                     
                   </div>
-                  <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Consultation</h3>
+                  <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Implantation</h3>
                   <p className="text-gray-600 text-center leading-relaxed">
-                       Personalized hair analysis and treatment planning.
+                    Each follicle is precisely implanted to match your natural hairline, ensuring even density, realistic growth patterns, and lasting results.
                   </p>
                 </div>
                 {/* Step Card 4 */}
@@ -83,9 +83,9 @@ const Steps = ()=> {
                     </div>
                     
                   </div>
-                  <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Consultation</h3>
+                  <h3 className="text-[20px] font-semibold text-gray-900 mb-4 text-center">Hair Growth</h3>
                   <p className="text-gray-600 text-center leading-relaxed">
-                       Personalized hair analysis and treatment planning.
+                    With minimal downtime, the transplanted follicles settle quickly and begin natural regrowth, giving you fuller, permanent hair over time.
                   </p>
                 </div>
               </div>

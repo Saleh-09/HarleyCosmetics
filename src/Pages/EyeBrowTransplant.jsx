@@ -4,11 +4,7 @@ import Footer from "@/components/Footer";
 import HeroHeader from "@/components/HeroHeader";
 import Transformations from "@/components/Tranformations";
 import React from "react";
-import EyebrowImage from "../assets/TransplantImages/EyebrowTransplant.png";
-import Step1 from "../assets/Step1.svg"
-import Step2 from "../assets/Step2.svg"
-import Step3 from "../assets/Step3.svg"
-import Step4 from "../assets/Step4.svg"
+import EyebrowImage from "../assets/TransplantImages/EyebrowTransplant.svg";
 import Steps from "@/components/Steps";
 
 const EyeBrowTransplant = () => {
@@ -41,7 +37,7 @@ const EyeBrowTransplant = () => {
                         Eyebrow Transplant Treatment
                       </h2>
                       <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                        Our advanced hair transplant techniques are designed to deliver natural looking, permanent results. Whether you’re struggling with thinning hair, patchy beard growth, or sparse eyebrows, our specialists restore your confidence with proven methods and minimal downtime.
+                        Eyebrows play a crucial role in framing the face and enhancing your overall appearance. Our Eyebrow Transplant treatment is designed to restore sparse or over-plucked brows with natural, permanent results. By delicately implanting individual hairs to mimic the natural growth pattern, we ensure beautifully shaped eyebrows that suit your facial features. This precise, meticulous procedure allows you to achieve fuller brows that look authentic and require no makeup to fill in.
                       </p>
                     </div>
                   </div>

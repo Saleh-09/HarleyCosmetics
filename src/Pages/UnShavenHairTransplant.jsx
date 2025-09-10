@@ -1,5 +1,5 @@
 import React from "react";
-import FueImage from "../assets/FueImage.svg";
+import UnSahvenTransplant from "../assets/TransplantImages/UnSahvenTransplant.svg";
 import HeroHeader from "@/components/HeroHeader";
 import Transformations from "@/components/Tranformations";
 import FAQs from "@/components/FAQs";
@@ -23,8 +23,8 @@ const UnShavenHairTransplant = () => {
                     {/* Left Image */}
                     <div className="flex-shrink-0">
                       <img
-                        src={FueImage}
-                        alt="FueImage"
+                        src={UnSahvenTransplant}
+                        alt="UnSahvenTransplant"
                         className="w-[350px] h-[261px] md:w-[648px] md:h-[491px] object-cover rounded-2xl shadow-lg"
                       />
                     </div>
@@ -38,7 +38,7 @@ const UnShavenHairTransplant = () => {
                         Un-Shaven Hair Transplant
                       </h2>
                       <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                        Our advanced hair transplant techniques are designed to deliver natural looking, permanent results. Whether you’re struggling with thinning hair, patchy beard growth, or sparse eyebrows, our specialists restore your confidence with proven methods and minimal downtime.
+                        Our Un-Shaven Hair Transplant is the ideal option for those who want to restore their hair without the noticeable downtime of a shaved head. Using advanced FUE techniques, hair follicles are transplanted seamlessly into thinning areas while allowing you to maintain your existing hairstyle. This discreet method ensures that the procedure remains virtually undetectable, making it perfect for professionals or individuals with busy lifestyles who cannot afford a visible recovery period.
                       </p>
                     </div>
                   </div>

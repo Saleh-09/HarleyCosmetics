@@ -3,11 +3,7 @@ import FAQs from "@/components/FAQs";
 import HeroHeader from "@/components/HeroHeader";
 import Transformations from "@/components/Tranformations";
 import React from "react";
-import BeardImage from "../assets/TransplantImages/BeardTransplantImage.png";
-import Step1 from "../assets/Step1.svg"
-import Step2 from "../assets/Step2.svg"
-import Step3 from "../assets/Step3.svg"
-import Step4 from "../assets/Step4.svg"
+import BeardImage from "../assets/TransplantImages/BeardTransplantImage.svg";
 import Footer from "@/components/Footer";
 import Steps from "@/components/Steps";
 
@@ -41,7 +37,7 @@ const BeardTransplant = () => {
                         Beard Transplant Treatment
                       </h2>
                       <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                        Our advanced hair transplant techniques are designed to deliver natural looking, permanent results. Whether you’re struggling with thinning hair, patchy beard growth, or sparse eyebrows, our specialists restore your confidence with proven methods and minimal downtime.
+                       A well-defined beard has become a symbol of masculinity and style, and our Beard Transplant service helps you achieve just that. Using advanced follicular unit extraction (FUE) methods, we carefully transplant healthy hair follicles to areas with little or no growth, creating a thicker, fuller, and natural-looking beard. Whether you want to fill patchy areas, shape your beard for a more defined look, or achieve a completely new style, our experienced team ensures results that are permanent, natural, and tailored to your face shape.
                       </p>
                     </div>
                   </div>

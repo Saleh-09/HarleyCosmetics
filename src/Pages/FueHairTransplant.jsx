@@ -33,10 +33,10 @@ const FueHairTransplant = () => {
                           Traetment
                         </span>
                         <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6 text-gray-900 leading-tight">
-                          Hair Transplant Treatment
+                          FUE Hair Transplant
                         </h2>
-                        <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-                          Our advanced hair transplant techniques are designed to deliver natural looking, permanent results. Whether you’re struggling with thinning hair, patchy beard growth, or sparse eyebrows, our specialists restore your confidence with proven methods and minimal downtime.
+                        <p className="text-[19px] text-gray-600 leading-relaxed max-w-xl">
+                          Our FUE Hair Transplant is a highly advanced and minimally invasive procedure that delivers permanent, natural-looking hair restoration. Using precision techniques, individual hair follicles are carefully extracted and implanted to create a full, even, and realistic hairline without leaving noticeable scars. This modern method ensures faster healing, minimal discomfort, and long-lasting results that blend seamlessly with your existing hair.
                         </p>
                       </div>
                   </div>
