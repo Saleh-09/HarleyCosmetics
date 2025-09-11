@@ -6,6 +6,7 @@ import DrMahdi from "../assets/DoctorImages/Dr.MahdiAlosert.svg";
 import DrMasood from "../assets/DoctorImages/Dr.MasoodMunir.svg";
 import DrSami from "../assets/DoctorImages/Dr.SamiMirza.svg";
 import DrShuaib from "../assets/DoctorImages/Dr.ShuaibMir.svg";
+import DrVishalNayak from "../assets/DoctorImages/Dr.VishalNayak.svg";
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
 
@@ -34,7 +35,7 @@ const OurDoctors = () => {
                     <div>
                         <img className="mb-3"
                         src={DrZakar}
-                        alt="firstTranformation"
+                        alt="DrZakar"
                         />
                         <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Zakir Rafiq</h2>
                         <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
@@ -47,7 +48,7 @@ const OurDoctors = () => {
                     <div>
                         <img className="mb-3"
                         src={DrHaider}
-                        alt="firstTranformation"
+                        alt="DrHaider"
                         />
                         <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr Haider Gillani</h2>
                         <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
@@ -60,7 +61,7 @@ const OurDoctors = () => {
                     <div>
                         <img className="mb-3"
                         src={DrMahdi}
-                        alt="firstTranformation"
+                        alt="DrMahdi"
                         />
                         <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Mahdi Alosert</h2>
                         <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
@@ -73,7 +74,7 @@ const OurDoctors = () => {
                     <div>
                         <img className="mb-3"
                         src={DrMasood}
-                        alt="firstTranformation"
+                        alt="DrMasood"
                         />
                         <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Masood Munir</h2>
                         <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
@@ -86,7 +87,7 @@ const OurDoctors = () => {
                     <div>
                         <img className="mb-3"
                         src={DrSami}
-                        alt="firstTranformation"
+                        alt="DrSami"
                         />
                         <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Sami Mirza</h2>
                         <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
@@ -99,7 +100,7 @@ const OurDoctors = () => {
                     <div>
                         <img className="mb-3"
                         src={DrShuaib}
-                        alt="firstTranformation"
+                        alt="DrShuaib"
                         />
                         <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Shuaib Mir</h2>
                         <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
@@ -107,7 +108,18 @@ const OurDoctors = () => {
                         1000+ hair restoration surgeries | Specialist in FUE, PRP, mesotherapy & natural hairline design
                         </p>
                     </div>
-                    
+                    {/* Doctor Card 7 */}
+                    <div>
+                        <img className="mb-3"
+                        src={DrVishalNayak}
+                        alt="DrVishalNayak"
+                        />
+                        <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Vishal Nayak</h2>
+                        <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
+                        <p className="text-gray-600 text-center leading-relaxed mb-5">
+                        3000 successful patients. | Specializes in FUE/non-shaven hair transplant technique
+                        </p>
+                    </div>
                 </div>
             </div>
             <Banner/>
