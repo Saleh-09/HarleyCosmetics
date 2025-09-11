@@ -7,10 +7,11 @@ import DentalChair from "../assets/dental-chair.svg"
 const Features =() => {
     return(
         <div className="max-w-7xl mx-auto px-4 mb-15">
-          {/* Features Badge */}
+          {/* Features Badge 
           <div className="flex justify-center mb-4">
             <span className="text-[#3C2031] text-[25px] font-semibold">Features</span>
           </div>
+          */}
 
           {/* Section Header */}
           <div className="text-center mb-12">

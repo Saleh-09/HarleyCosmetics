@@ -39,7 +39,7 @@ const OurDoctors = () => {
                         <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Zakir Rafiq</h2>
                         <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
                         <p className="text-gray-600 text-center leading-relaxed mb-5">
-                        7+ years experience | 4000+ hair restoration surgeries | Expert in advanced hair loss & alopecia treatments
+                        4000+ hair restoration surgeries | Expert in advanced hair loss & alopecia treatments
                         </p>
                     </div>
                     
@@ -52,7 +52,7 @@ const OurDoctors = () => {
                         <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr Haider Gillani</h2>
                         <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
                         <p className="text-gray-600 text-center leading-relaxed mb-5 ">
-                        10+ years experience | 1000+ FUE procedures | Specialist in hairline design & Afro-Caribbean hair types
+                        3000+ FUE procedures | Specialist in hairline design & Afro-Caribbean hair types
                         </p>
                     </div>
                     
@@ -65,7 +65,7 @@ const OurDoctors = () => {
                         <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Mahdi Alosert</h2>
                         <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
                         <p className="text-gray-600 text-center leading-relaxed mb-5">
-                        1000+ successful surgeries | Expert in FUE & aesthetic treatments | Experience with celebrity clientele
+                        2000+ hair restoration surgeries | Expert in FUE & aesthetic treatments | Experience with celebrity clientele
                         </p>
                     </div>
                     
@@ -78,7 +78,7 @@ const OurDoctors = () => {
                         <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Masood Munir</h2>
                         <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
                         <p className="text-gray-600 text-center leading-relaxed">
-                        8+ years experience | Specialist in FUE & Afro hair transplants | PRP, Botox & minimally invasive cosmetic procedures
+                        1500+ hair restoration surgeries | Specialist in FUE & Afro hair transplants | PRP, Botox & minimally invasive cosmetic procedures
                         </p>
                     </div>
                     
@@ -91,7 +91,7 @@ const OurDoctors = () => {
                         <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Sami Mirza</h2>
                         <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
                         <p className="text-gray-600 text-center leading-relaxed">
-                        3+ years experience | Specialist in FUE, Afro & unshaven transplants | Botox & minimally invasive cosmetic procedures
+                        1000+ hair restoration surgeries | Specialist in FUE, Afro & unshaven transplants | Botox & minimally invasive cosmetic procedures
                         </p>
                     </div>
                     
@@ -104,7 +104,7 @@ const OurDoctors = () => {
                         <h2 className="text-xl font-semibold text-gray-800 mb-2 text-center">Dr. Shuaib Mir</h2>
                         <h3 className="text-xl font-medium text-gray-600 mb-2 text-center">Hair Transplant Surgeon</h3>
                         <p className="text-gray-600 text-center leading-relaxed">
-                        3+ years experience | 1000+ successful cases | Specialist in FUE, PRP, mesotherapy & natural hairline design
+                        1000+ hair restoration surgeries | Specialist in FUE, PRP, mesotherapy & natural hairline design
                         </p>
                     </div>
                     
