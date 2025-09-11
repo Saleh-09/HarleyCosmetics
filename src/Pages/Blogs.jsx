@@ -35,16 +35,15 @@ const Blogs = () => {
             badge="Blogs"
             height="h-[365px]"
         />
-        {/* Features Badge */}
-        <div className="flex justify-center mb-8">
-            <span className="bg-[#3C2031] text-[#FCD9A1]  px-6 py-4 rounded-full text-sm font-medium">Features</span>
+        {/* Testimonial Badge */}
+        <div className="flex justify-center mb-4">
+            <span className="text-[#3C2031] text-[25px] font-semibold">Blogs</span>
         </div>
-
         {/* Section Header */}
         <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#141219] mb-4">Why Choose Elite Harley Cosmetics</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#141219] mb-4">Tips for Healthy Hair Care</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Watch videos showcasing the remarkable results achieved by our skilled surgeons.
+              Learn practical tips, do’s and don’ts, and expert guidance to maintain strong and healthy hair every day.
             </p>
         </div>
         <main className="max-w-6xl mx-auto px-6 py-16">
@@ -85,7 +84,9 @@ const Blogs = () => {
                 </div>
             </div>
         </main>
-        <Banner/>
+        <div className="max-w-7xl mx-auto px-6">
+          <Banner/>
+        </div>
         <Footer/>
       </div>
     )

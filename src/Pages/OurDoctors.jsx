@@ -18,6 +18,7 @@ const OurDoctors = () => {
             badge="Our Doctors"
             height="h-[365px]"
             />
+            {/* Doctors Section */}
             <div className="max-w-7xl mx-auto px-4 mb-15">
                 {/* Doctors Badge */}
                 <div className="flex justify-center mb-4">
@@ -123,7 +124,9 @@ const OurDoctors = () => {
                     </div>
                 </div>
             </div>
-            <Banner/>
+            <div className="max-w-7xl mx-auto px-6">
+                <Banner/>
+           </div>
             <Footer/>
         </div>
     )
