@@ -59,7 +59,7 @@ const HeroHeader = ({
                         {badge}
                         </span>
                     )}
-                    <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-6xl font-normal mb-6 leading-tight font-bevietnam">
+                    <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-[53px] font-normal mb-6 leading-tight font-bevietnam">
                         {title}
                     </h1>
                     {subtitle && (
