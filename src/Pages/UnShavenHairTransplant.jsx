@@ -46,7 +46,8 @@ const UnShavenHairTransplant = () => {
             <Steps/>
             <Transformations/>
             <FAQs/>  
-            <div className="max-w-7xl mx-auto px-6"> 
+            <div className="max-w-7xl mx-auto px-3"> 
+              <FAQs/>
               <Banner/>
             </div>
             <Footer/>

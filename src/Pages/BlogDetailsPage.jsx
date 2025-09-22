@@ -84,7 +84,9 @@ const BlogsDetailsPage = () => {
                 </div>
             </article>
         </main>
-        <Banner/>
+        <div className="max-w-7xl mx-auto px-3"> 
+            <Banner/>
+        </div>
         <Footer/>
         </div>
         

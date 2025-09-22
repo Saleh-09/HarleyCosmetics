@@ -21,8 +21,8 @@ const Home = () => {
         <Transformations/>
         <Treatments/>
         <Testimonial/>
-        <FAQs limit={5} />
-         <div className="max-w-7xl mx-auto px-3"> 
+        <div className="max-w-7xl mx-auto px-3">             
+            <FAQs limit={5} />
             <Banner/>
         </div>
         <Footer/>

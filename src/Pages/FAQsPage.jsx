@@ -12,8 +12,10 @@ const FAQsPage = () => {
             badge="FAQs"
             height="h-[365px]"
             />
-            <FAQs/>
-            <Banner/>
+            <div className="max-w-7xl mx-auto px-3"> 
+              <FAQs/>            
+              <Banner/>
+            </div>
             <Footer/>
         </div>
     )
