@@ -10,7 +10,7 @@ const FueHairTransplant = () => {
     return(
         <div className="w-screen min-h-screen overflow-x-hidden bg-white"> 
             <HeroHeader
-            title="Personalized Hair Transplant Solutions for Lasting, Natural Results"
+            title="FUE Hair Transplant for Natural, Lasting Hair Growth"
             badge="Fue Hair Transplant"
             height="h-[365px]"
             />
@@ -43,8 +43,8 @@ const FueHairTransplant = () => {
             </section>
             <Steps/>
             <Transformations/>
-            <div className="max-w-7xl mx-auto px-6"> 
-              <FAQs/>            
+            <FAQs/>
+            <div className="max-w-7xl mx-auto px-6">             
               <Banner/>
             </div>
             <Footer/>

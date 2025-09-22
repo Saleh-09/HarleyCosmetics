@@ -126,7 +126,7 @@ const OurDoctors = () => {
             </div>
             <div className="max-w-7xl mx-auto px-6">
                 <Banner/>
-           </div>
+            </div>
             <Footer/>
         </div>
     )

@@ -11,7 +11,7 @@ const EyeBrowTransplant = () => {
     return(
         <div className="w-screen min-h-screen overflow-x-hidden bg-white"> 
             <HeroHeader
-            title="Personalized Hair Transplant Solutions for Lasting, Natural Results"
+            title="Natural Eyebrow Transplants for Perfectly Shaped Eyebrows"
             badge="Eyebrow Transplant"
             height="h-[365px]"
             />
@@ -44,8 +44,8 @@ const EyeBrowTransplant = () => {
             </section>
             <Steps/>          
             <Transformations/>
+            <FAQs/> 
             <div className="max-w-7xl mx-auto px-6"> 
-              <FAQs/>   
               <Banner/>
             </div>
             <Footer/>

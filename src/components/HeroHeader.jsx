@@ -55,11 +55,11 @@ const HeroHeader = ({
                 <div className="relative z-10 flex items-center justify-center h-full">
                     <div className="text-center text-white max-w-4xl px-4">
                     {badge && (
-                        <span className="inline-block bg-[#3C2031] text-[#FCD9A1] px-6 py-4 rounded-full text-sm font-medium mb-4">
+                        <span className="inline-block text-[#FCD9A1] text-[23px] font-medium mb-4">
                         {badge}
                         </span>
                     )}
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal mb-6 leading-tight font-bevietnam">
+                    <h1 className="text-3xl sm:text-3xl md:text-5xl lg:text-6xl w-[900px] font-normal mb-6 leading-tight font-bevietnam">
                         {title}
                     </h1>
                     {subtitle && (

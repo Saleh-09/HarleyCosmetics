@@ -22,7 +22,9 @@ const Home = () => {
         <Treatments/>
         <Testimonial/>
         <FAQs limit={5} />
-        <Banner/>
+         <div className="max-w-7xl mx-auto px-6"> 
+            <Banner/>
+        </div>
         <Footer/>
         </div>
     )

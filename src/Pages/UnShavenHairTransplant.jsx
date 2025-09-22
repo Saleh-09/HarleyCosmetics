@@ -12,7 +12,7 @@ const UnShavenHairTransplant = () => {
     return(
         <div className="w-screen min-h-screen overflow-x-hidden bg-white"> 
             <HeroHeader
-            title="Personalized Hair Transplant Solutions for Lasting, Natural Results"
+            title="Seamless Un-Shaven Hair Transplant for Lasting Results"
             badge="Un-Shaven Hair Transplant"
             height="h-[365px]"
             />
@@ -45,8 +45,8 @@ const UnShavenHairTransplant = () => {
             </section>
             <Steps/>
             <Transformations/>
+            <FAQs/>  
             <div className="max-w-7xl mx-auto px-6"> 
-              <FAQs/>  
               <Banner/>
             </div>
             <Footer/>

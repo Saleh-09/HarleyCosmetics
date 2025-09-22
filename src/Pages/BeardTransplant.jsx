@@ -11,7 +11,7 @@ const BeardTransplant = () => {
     return(
          <div className="w-screen min-h-screen overflow-x-hidden bg-white"> 
             <HeroHeader
-            title="Personalized Hair Transplant Solutions for Lasting, Natural Results"
+            title="Beard Transplant Solutions for a Fuller and Masculine Look"
             badge="Beard Transplant"
             height="h-[365px]"
             />
@@ -44,8 +44,8 @@ const BeardTransplant = () => {
             </section>
             <Steps/>    
             <Transformations/>
+            <FAQs/> 
             <div className="max-w-7xl mx-auto px-6"> 
-              <FAQs/>        
               <Banner/>
             </div>
             <Footer/>

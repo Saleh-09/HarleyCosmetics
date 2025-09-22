@@ -25,7 +25,7 @@ const Testimonial = () => {
                     {/* Card Content */}
                     <div className="p-6 py-8">
                         <div className="flex items-start justify-between mb-4">
-                            <h3 className="text-lg font-semibold text-gray-900">James Smith</h3>
+                            <h3 className="text-lg font-semibold text-gray-900">Rajiv Purohit</h3>
                             {/* Rating */}
                             <div className="flex items-center gap-1">
                                 {[...Array(5)].map((_, i) => (
@@ -35,9 +35,8 @@ const Testimonial = () => {
                         </div>
                         
                         {/* Testimonial Text */}
-                        <p className="text-gray-600 text-justify leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
-                            Pellentesque sit amet sapien fringilla, mattis ligula consectetur.
+                        <p className="text-gray-600 leading-relaxed">
+                            Good quality service from Dr Vishal and the team. Made me feel comfortable from the beginning. Professional and clear throughout the procedure.
                         </p>
                     </div>
                 </div>
@@ -46,7 +45,7 @@ const Testimonial = () => {
                     {/* Card Content */}
                     <div className="p-6 py-8">
                         <div className="flex items-start justify-between mb-4">
-                            <h3 className="text-lg font-semibold text-gray-900">James Smith</h3>
+                            <h3 className="text-lg font-semibold text-gray-900">Matthew White</h3>
                             {/* Rating */}
                             <div className="flex items-center gap-1">
                                 {[...Array(5)].map((_, i) => (
@@ -57,8 +56,7 @@ const Testimonial = () => {
                         
                         {/* Testimonial Text */}
                         <p className="text-gray-600 text-justify leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
-                            Pellentesque sit amet sapien fringilla, mattis ligula consectetur.
+                            Absolutely blown away from start to finish. The professionalism from the very first consultation to the treatment on the day right up to the aftercare and calls six months later has been brilliant.
                         </p>
                     </div>
                 </div>
@@ -67,7 +65,7 @@ const Testimonial = () => {
                     {/* Card Content */}
                     <div className="p-6 py-8">
                         <div className="flex items-start justify-between mb-4">
-                            <h3 className="text-lg font-semibold text-gray-900">James Smith</h3>
+                            <h3 className="text-lg font-semibold text-gray-900">Mirabel Redwyne</h3>
                             {/* Rating */}
                             <div className="flex items-center gap-1">
                                 {[...Array(5)].map((_, i) => (
@@ -78,8 +76,8 @@ const Testimonial = () => {
                         
                         {/* Testimonial Text */}
                         <p className="text-gray-600 text-justify leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
-                            Pellentesque sit amet sapien fringilla, mattis ligula consectetur.
+                            I chose Dr. Haider Gillani for my treatment and he exceeded all expectations. 
+                            He’s extremely knowledgeable, made me feel at ease, and delivered incredible results. 
                         </p>
                     </div>
                 </div>
