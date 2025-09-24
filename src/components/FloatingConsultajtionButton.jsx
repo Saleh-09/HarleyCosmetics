@@ -47,9 +47,9 @@ const FloatingConsultationButton = () => {
           onClick={() => setIsModalOpen(true)}
           className="fixed bottom-6 left-1/2 -translate-x-1/2 
             md:right-6 md:left-auto md:translate-x-0
-            bg-[#3C2031] hover:bg-[#533547] text-[#FCD9A1] 
+            bg-[#3C2031] hover:bg-[#533547] text-[#FCD9A1] border-3 border-[#FCD9A1]
             px-9 py-7 rounded-full shadow-lg hover:shadow-xl 
-            transition-all duration-300 z-50 font-medium text-base
+            transition-all duration-300 z-50 font-medium text-[18px]
             hover:cursor-pointer"
         >
           Book Free Consultation
