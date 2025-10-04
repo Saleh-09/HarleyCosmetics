@@ -21,10 +21,10 @@ const WhyChooseUs = () => {
             Why Choose Us
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6 text-gray-900 leading-tight">
-            Welcome To Hair Transplant Center
+            Welcome To Harley Cosmetics
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, ve
+            Harley Cosmetics is one of the largest hair re-growth centres in West London, equipped with the latest technology and an expert medical and non-medical team. With all medication and surgeries taking place in our state-of-the-art clinics, Harley Cosmetics’ unique hair centres are expanding to become one of the UK’s largest and most renowned hair treatment providers. Harley Cosmetics boasts a range of A-list celebrities and athletes who have successfully undergone treatment.
           </p>
         </div>
       </div>

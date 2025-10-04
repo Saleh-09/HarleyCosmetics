@@ -43,7 +43,7 @@ const Branches = () => {
                     />
                     <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3 text-center">Manchester</h3>
                     <p className="text-gray-600 text-center leading-relaxed">
-                       45 King Street, Manchester M2 4LQ, United Kingdom
+                       4th Floor Speakers House, 39 Deansgate, Manchester, M3 2BA
                     </p>
                 </div>
                  {/* Branch Card 3 */}
@@ -55,7 +55,7 @@ const Branches = () => {
                     />
                     <h3 className="text-xl font-semibold text-gray-900 mt-6 mb-3 text-center">Glassgow</h3>
                     <p className="text-gray-600 text-center leading-relaxed">
-                       221B Baker Street, Marylebone, London W1U 6SG, United Kingdom
+                       97 Douglas Street, Glasgow, G2 4EU
                     </p>
                 </div>
             </div>

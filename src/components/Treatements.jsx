@@ -19,110 +19,121 @@ const Treatments = () => {
             </div>
             {/* Treatments Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {/* Treatment Card 1*/}
-                <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
-                    <div className="flex flex-col  items-center justify-center space-x-0.5 mb-6">
-                        <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
-                            Fue Hair Transplant</h3>
-                        <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           Minimally invasive procedure using follicular unit extraction for natural, permanent hair restoration.
-                        </p>
-                        <Link 
-                            to="/male/fue-hair-transplant" 
-                            className="w-[280px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 hover:cursor-pointer"
-                        >
-                            <p className="text-[15px]">Explore More</p>
-                            <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
-                        </Link>
+                {/* Treatment Card 1 */}
+                <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
+                    <div className="flex flex-col items-center justify-center text-center space-y-[25px] flex-1 w-full px-[20px]">
+                        <h3 className="font-bevietnam text-[22px] font-medium text-[#141219] leading-snug">
+                        Fue Hair Transplant
+                        </h3>
 
+                        <p className="text-gray-600 leading-relaxed break-words text-[16.5px]">
+                        This advanced technique ensures minimal scarring and quick recovery while delivering fuller, natural-looking hair results.
+                        </p>
                     </div>
+                    <Link
+                        to="/male/fue-hair-transplant"
+                        className="mt-[25px] w-full max-w-[250px] h-[48px] text-[15px] bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 transition-colors"
+                    >
+                        <span>Explore More</span>
+                        <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
+                    </Link>
                 </div>
                 {/* Treatment Card 2*/}
-                <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
-                    <div className="flex flex-col  items-center justify-center space-x-0.5 mb-6">
-                        <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
-                            Beard Transplant</h3>
-                        <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           Enhances facial hair density and symmetry with precise graft placement for a fuller, natural beard.
+                <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
+                    <div className="flex flex-col items-center justify-center text-center space-y-[25px] flex-1 w-full px-[20px]">
+                        <h3 className="font-bevietnam text-[22px] font-medium text-[#141219] leading-snug">
+                        Beard Transplant
+                        </h3>
+
+                        <p className="text-gray-600 leading-relaxed break-words text-[16.5px]">
+                        Enhances facial hair density and symmetry with precise graft placement for a natural beard.
+                        Achieve long lasting, natural results with minimal time.
                         </p>
-                        <Link 
-                            to="/male/beard-transplant" 
-                            className="w-[280px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 hover:cursor-pointer"
-                        >
-                            <p className="text-[15px]">Explore More</p>
-                            <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
-                        </Link>
                     </div>
+                    <Link
+                        to="/male/fue-hair-transplant"
+                        className="mt-[25px] w-full max-w-[250px] h-[48px] text-[15px] bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 transition-colors"
+                    >
+                        <span>Explore More</span>
+                        <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
+                    </Link>
                 </div>
                 {/* Treatment Card 3*/}
-                <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
-                    <div className="flex flex-col  items-center justify-csnter space-x-0.5 mb-6">
-                        <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
-                           Eyebrow Transplant</h3>
-                        <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           Restores thin or patchy eyebrows with meticulous follicle implantation for a natural, defined look.
+                <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
+                    <div className="flex flex-col items-center justify-center text-center space-y-[25px] flex-1 w-full px-[20px]">
+                        <h3 className="font-bevietnam text-[22px] font-medium text-[#141219] leading-snug">
+                        Eyebrow Transplant
+                        </h3>
+
+                        <p className="text-gray-600 leading-relaxed break-words text-[17px]">
+                        This advanced technique ensures minimal scarring and quick recovery while delivering fuller, natural-looking hair results.
                         </p>
-                        <Link 
-                            to="/male/eyebrow-transplant" 
-                            className="w-[280px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 hover:cursor-pointer"
-                        >
-                            <p className="text-[15px]">Explore More</p>
-                            <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
-                        </Link>
                     </div>
+                    <Link
+                        to="/male/fue-hair-transplant"
+                        className="mt-[25px] w-full max-w-[250px] h-[48px] text-[15px] bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 transition-colors"
+                    >
+                        <span>Explore More</span>
+                        <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
+                    </Link>
                 </div>
                 {/* Treatment Card 4*/}
-                <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
-                    <div className="flex flex-col  items-center justify-center space-x-0.5 mb-6">
-                        <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
-                            Female Hair Transplant</h3>
-                        <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           Advanced solutions for women experiencing thinning or hair loss, restoring natural volume and hairline.
+                <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
+                    <div className="flex flex-col items-center justify-center text-center space-y-[25px] flex-1 w-full px-[20px]">
+                        <h3 className="font-bevietnam text-[22px] font-medium text-[#141219] leading-snug">
+                        Afro Hair Transplant
+                        </h3>
+
+                        <p className="text-gray-600 leading-relaxed break-words text-[17px]">
+                        This advanced technique ensures minimal scarring and quick recovery while delivering fuller, natural-looking hair results.
                         </p>
-                        <Link 
-                            to="/male/eyebrow-transplant" 
-                            className="w-[280px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 hover:cursor-pointer"
-                        >
-                            <p className="text-[15px]">Explore More</p>
-                            <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
-                        </Link>
                     </div>
+                    <Link
+                        to="/male/fue-hair-transplant"
+                        className="mt-[25px] w-full max-w-[250px] h-[48px] text-[15px] bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 transition-colors"
+                    >
+                        <span>Explore More</span>
+                        <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
+                    </Link>
                 </div>
                 {/* Treatment Card 5*/}
-                <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
-                    <div className="flex flex-col  items-center justify-center space-x-0.5 mb-6">
-                        <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
-                            Afro Hair Transplant</h3>
-                        <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           Specialised technique tailored for Afro-Caribbean hair, ensuring natural curl pattern and density.
+                <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
+                    <div className="flex flex-col items-center justify-center text-center space-y-[25px] flex-1 w-full px-[20px]">
+                        <h3 className="font-bevietnam text-[22px] font-medium text-[#141219] leading-snug">
+                        Female Hair Transplant
+                        </h3>
+
+                        <p className="text-gray-600 leading-relaxed break-words text-[17px]">
+                        This advanced technique ensures minimal scarring and quick recovery while delivering fuller, natural-looking hair results.
                         </p>
-                        <Link 
-                            to="/male/afro-hair-transplant" 
-                            className="w-[280px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 hover:cursor-pointer"
-                        >
-                            <p className="text-[15px]">Explore More</p>
-                            <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
-                        </Link>
                     </div>
+                    <Link
+                        to="/male/fue-hair-transplant"
+                        className="mt-[25px] w-full max-w-[250px] h-[48px] text-[15px] bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 transition-colors"
+                    >
+                        <span>Explore More</span>
+                        <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
+                    </Link>
                 </div>
                 {/* Treatment Card 6*/}
-                <div className="bg-white rounded-lg p-8 shadow-sm hover:shadow-md transition-shadow">
-                    <div className="flex flex-col  items-center justify-csnter space-x-0.5 mb-6">
-                        <h3 className="font-bevietnam text-[24px] font-medium text-[#141219] mb-6 text-center">
-                            Un-Shaven Hair Transplant</h3>
-                        <p className="text-gray-600 text-center leading-relaxed mb-6">
-                           Discreate procedure performed without shaving, ideal for maintaining your existing hairstyle.
+                <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
+                    <div className="flex flex-col items-center justify-center text-center space-y-[25px] flex-1 w-full px-[20px]">
+                        <h3 className="font-bevietnam text-[22px] font-medium text-[#141219] leading-snug">
+                        Un-Shaven Hair Transplant
+                        </h3>
+
+                        <p className="text-gray-600 leading-relaxed break-words text-[16.5px]">
+                        Procedure performed without shaving, ideal for maintaining your existing hairstyle. Provides seamless and natural results without altering your current look.
                         </p>
-                        <Link 
-                            to="/male/unshaven-hair-transplant" 
-                            className="w-[280px] h-[50px] text-[16px] border-none bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 hover:cursor-pointer"
-                        >
-                            <p className="text-[15px]">Explore More</p>
-                            <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
-                        </Link>
                     </div>
-                </div>
-                
+                    <Link
+                        to="/male/fue-hair-transplant"
+                        className="mt-[25px] w-full max-w-[250px] h-[48px] text-[15px] bg-[#3C2031] hover:bg-[#4a2e4a] text-[#FCD9A1] rounded-2xl flex items-center justify-center gap-2 transition-colors"
+                    >
+                        <span>Explore More</span>
+                        <ArrowRight className="w-4 h-4 text-[#FCD9A1]" />
+                    </Link>
+                </div>                
             </div>
         </div>
     )

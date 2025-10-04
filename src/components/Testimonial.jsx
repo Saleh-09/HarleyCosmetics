@@ -56,7 +56,7 @@ const Testimonial = () => {
                         
                         {/* Testimonial Text */}
                         <p className="text-gray-600 text-justify leading-relaxed">
-                            Absolutely blown away from start to finish. The professionalism from the very first consultation to the treatment on the day right up to the aftercare and calls six months later has been brilliant.
+                            Absolutely blown away from start to finish. The professionalism from the very first consultation to the treatment on the day right up to the aftercare has been brilliant.
                         </p>
                     </div>
                 </div>

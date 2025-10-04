@@ -138,7 +138,7 @@ const Navbar = () =>{
                             onMouseEnter={handleMaleMouseEnter}
                             onMouseLeave={handleMaleMouseLeave}
                         >
-                            <div className="flex items-center gap-1 text-gray-700 hover:text-[#3C2031] cursor-pointer py-2">
+                            <div className="flex items-center gap-1 text-gray-700 hover:text-[#3C2031] cursor-pointer py-2 whitespace-nowrap">
                                 <span>Male Treatment</span>
                                 <ChevronDown className="w-4 h-4" />
                             </div>
@@ -166,7 +166,7 @@ const Navbar = () =>{
                             onMouseEnter={handleFemaleMouseEnter}
                             onMouseLeave={handleFemaleMouseLeave}
                         >
-                            <div className="flex items-center gap-1 text-gray-700 hover:text-[#3C2031] cursor-pointer py-2">
+                            <div className="flex items-center gap-1 text-gray-700 hover:text-[#3C2031] cursor-pointer py-2 whitespace-nowrap">
                                 <span>Female Treatment</span>
                                 <ChevronDown className="w-4 h-4" />
                             </div>
@@ -188,10 +188,10 @@ const Navbar = () =>{
                             )}
                         </div>
 
-                        <Link to="/about" className="text-gray-700 hover:text-[#3C2031] py-2">
+                        <Link to="/about" className="flex items-center gap-1 text-gray-700 hover:text-[#3C2031] cursor-pointer py-2 whitespace-nowrap">
                             About Us
                         </Link>
-                        <Link to="/doctors" className="text-gray-700 hover:text-[#3C2031] py-2">
+                        <Link to="/doctors" className="flex items-center gap-1 text-gray-700 hover:text-[#3C2031] cursor-pointer py-2 whitespace-nowrap">
                             Our Doctors
                         </Link>
                         <Link to="/blog" className="text-gray-700 hover:text-[#3C2031] py-2">

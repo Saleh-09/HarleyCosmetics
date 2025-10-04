@@ -23,10 +23,12 @@ const Transformations=()=>{
                       src={Patient1}
                       alt="firstTranformation"
                     />
-                    <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
+                    {/* Title and Description 
+                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
                     <p className="text-gray-600 text-center leading-relaxed">
                         Donor Area: Back of scalp | Result Time: 8 Months
                     </p>
+                    */}
                 </div>
 
                 <div>
@@ -34,10 +36,13 @@ const Transformations=()=>{
                       src={Patient2}
                       alt="firstTranformation"
                     />
-                    <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
+                    {/* Title and Description 
+                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
                     <p className="text-gray-600 text-center leading-relaxed">
                         Donor Area: Back of scalp | Result Time: 8 Months
                     </p>
+                    */}
+                   
                 </div>
 
                 <div>
@@ -45,10 +50,12 @@ const Transformations=()=>{
                       src={Patient3}
                       alt="firstTranformation"
                     />
-                    <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
+                    {/* Title and Description 
+                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
                     <p className="text-gray-600 text-center leading-relaxed">
                         Donor Area: Back of scalp | Result Time: 8 Months
                     </p>
+                    */}
                 </div>
 
                  <div>
@@ -56,10 +63,12 @@ const Transformations=()=>{
                       src={Patient4}
                       alt="firstTranformation"
                     />
-                    <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
+                    {/* Title and Description 
+                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
                     <p className="text-gray-600 text-center leading-relaxed">
                         Donor Area: Back of scalp | Result Time: 8 Months
                     </p>
+                    */}
                 </div>
 
                 <div>
@@ -67,10 +76,12 @@ const Transformations=()=>{
                       src={Patient5}
                       alt="firstTranformation"
                     />
-                    <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
+                    {/* Title and Description 
+                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
                     <p className="text-gray-600 text-center leading-relaxed">
                         Donor Area: Back of scalp | Result Time: 8 Months
                     </p>
+                    */}
                 </div>
 
                 <div>
@@ -78,10 +89,12 @@ const Transformations=()=>{
                       src={Patient6}
                       alt="firstTranformation"
                     />
-                    <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
+                    {/* Title and Description 
+                     <h2 className="text-xl font-semibold text-gray-900 mb-2 text-center">Hair Transplant</h2>
                     <p className="text-gray-600 text-center leading-relaxed">
                         Donor Area: Back of scalp | Result Time: 8 Months
                     </p>
+                    */}
                 </div>
             </div>
         </div>
