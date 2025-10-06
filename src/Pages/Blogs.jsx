@@ -64,11 +64,7 @@ const Blogs = () => {
         </div>
         <div className="min-h-screen">
           <div className="max-w-7xl mx-auto">
-            <div className="mb-12">
-              <h1 className="text-4xl font-bold text-gray-900 mb-2">Our Blog</h1>
-              <p className="text-gray-600">Discover tips, trends, and insights for beautiful hair</p>
-            </div>
-            
+                     
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {blogData.map((blog) => (
                 <BlogCard key={blog.id} blog={blog} />
