@@ -17,6 +17,8 @@ import UnShavenHairTransplant from './Pages/UnShavenHairTransplant';
 import FemaleHairTransplant from './Pages/FemaleHairTransplant';
 import ScrollToTop from './components/ScrollToTop';
 import FemaleAfroHairTransplant from './Pages/FemaleAfroHairTransplant';
+import BlogCardGrid from './Pages/Blogs';
+import BlogDetailsPage from './Pages/BlogDetailsPage';
 
 
 function App() {
@@ -36,7 +38,7 @@ function App() {
                 <Route path="/faqs" element={<FAQsPage/>} />
                 <Route path="/contact" element={<ContactUs/>} />
                 <Route path="/blog" element={<Blogs/>} />
-                <Route path="/blog/:id" element={<BlogsDetailsPage />} />
+                <Route path="/blog/:slug" element={<BlogDetailsPage />} />
                 <Route path="/male/fue-hair-transplant" element={<FueHairTransplant />} />
                 <Route path="/male/beard-transplant" element={<BeardTransplant/>} />
                 <Route path='/male/afro-hair-transplant' element={<AfroHairTransplant/>} />
