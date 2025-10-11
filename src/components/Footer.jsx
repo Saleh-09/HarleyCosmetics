@@ -7,7 +7,8 @@ const Footer = () => {
     return(
         <footer className="bg-stone-100 py-12 px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-start gap-8">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-8">
+              
               {/* Left section - Logo and Social Icons */}
               <div className="flex flex-col gap-8">
                 <div className="flex-shrink-0">
@@ -31,36 +32,74 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Right section - Navigation Links */}
+              {/* Right section - Navigation Links + Clinics */}
               <div className="flex flex-col sm:flex-row gap-8 md:gap-16">
+                
                 {/* Explore Column */}
                 <div className="flex flex-col gap-3">
                   <h3 className="font-semibold text-gray-900 mb-2">Explore</h3>
-                    <Link to="/about" className="text-gray-700 hover:text-gray-900">
-                        About Us
-                    </Link>
-                    <Link to="/doctors" className="text-gray-700 hover:text-gray-900">
-                        Our Doctors
-                    </Link>
-                    <Link to="/blog" className="text-gray-700 hover:text-gray-900">
-                        Blog
-                    </Link>
-                    <Link to="/faqs" className="text-gray-700 hover:text-gray-900">
-                        FAQs
-                    </Link>
+                  <Link to="/about" className="text-gray-700 hover:text-gray-900">About Us</Link>
+                  <Link to="/doctors" className="text-gray-700 hover:text-gray-900">Our Doctors</Link>
+                  <Link to="/blog" className="text-gray-700 hover:text-gray-900">Blog</Link>
+                  <Link to="/faqs" className="text-gray-700 hover:text-gray-900">FAQs</Link>
                 </div>
 
-                {/* Legal Links Column 
+                {/* Clinics Section */}
                 <div className="flex flex-col gap-3">
-                  <h3 className="font-semibold text-gray-900 mb-2">Legal Links</h3>
-                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-                    Privacy Policy
-                  </a>
-                  <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
-                    Disclaimer
-                  </a>
+                  <h3 className="font-semibold text-gray-900 mb-2">Clinics</h3>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
+
+                    {/* Column 1 */}
+                    <div className="flex flex-col gap-3">
+                      <div className="hover:text-gray-900 cursor-pointer">
+                        <p className="font-semibold">Birmingham</p>
+                        <p className="text-sm">8 George road, Edgbaston, Birmingham, B15 1NP</p>
+                        <p className="text-sm">Contact : 0121 389 4898</p>
+                      </div>
+
+                      <div className="hover:text-gray-900 cursor-pointer">
+                        <p className="font-semibold">Bromley</p>
+                        <p className="text-sm">38/40 High Street, West Wickham, BR4 0NJ</p>
+                        <p className="text-sm">Contact : 0208 916 9882</p>
+                      </div>
+
+                      <div className="hover:text-gray-900 cursor-pointer">
+                        <p className="font-semibold">Leeds</p>
+                        <p className="text-sm">29 Park Place, Leeds, LS1 2SP</p>
+                        <p className="text-sm">Contact : 0113 531 7531</p>
+                      </div>
+
+                      <div className="hover:text-gray-900 cursor-pointer">
+                        <p className="font-semibold">London</p>
+                        <p className="text-sm">44 Chippenham Road, London, W9 2AF</p>
+                        <p className="text-sm">Contact : 0208 902 2270</p>
+                      </div>
+                    </div>
+
+                    {/* Column 2 */}
+                    <div className="flex flex-col gap-3">
+                      <div className="hover:text-gray-900 cursor-pointer">
+                        <p className="font-semibold">Manchester</p>
+                        <p className="text-sm">4th Floor Speakers House, 39 Deansgate, Manchester, M3 2AB</p>
+                        <p className="text-sm">Contact : 0161 470 4504</p>
+                      </div>
+
+                      <div className="hover:text-gray-900 cursor-pointer">
+                        <p className="font-semibold">Romford</p>
+                        <p className="text-sm">48-50 South Street, Romford, RM1 1RB</p>
+                        <p className="text-sm">Contact : 0170 857 2674</p>
+                      </div>
+
+                      <div className="hover:text-gray-900 cursor-pointer">
+                        <p className="font-semibold">Glasgow</p>
+                        <p className="text-sm">97 Douglas Street, Glasgow, G2 4EU</p>
+                        <p className="text-sm">Contact : 0141 378 509</p>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
-                */}
               </div>
             </div>
 
@@ -81,4 +120,5 @@ const Footer = () => {
         </footer>
     )
 }
-export default Footer
+
+export default Footer;

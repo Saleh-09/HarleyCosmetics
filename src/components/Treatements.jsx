@@ -20,7 +20,7 @@ const Treatments = () => {
             {/* Treatments Grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Treatment Card 1 */}
-                <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
+                <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
                     <div className="flex flex-col items-center justify-center text-center space-y-[25px] flex-1 w-full px-[20px]">
                         <h3 className="font-bevietnam text-[22px] font-medium text-[#141219] leading-snug">
                         Fue Hair Transplant
@@ -39,7 +39,7 @@ const Treatments = () => {
                     </Link>
                 </div>
                 {/* Treatment Card 2*/}
-                <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
+                <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
                     <div className="flex flex-col items-center justify-center text-center space-y-[25px] flex-1 w-full px-[20px]">
                         <h3 className="font-bevietnam text-[22px] font-medium text-[#141219] leading-snug">
                         Beard Transplant
@@ -59,7 +59,7 @@ const Treatments = () => {
                     </Link>
                 </div>
                 {/* Treatment Card 3*/}
-                <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
+                <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
                     <div className="flex flex-col items-center justify-center text-center space-y-[25px] flex-1 w-full px-[20px]">
                         <h3 className="font-bevietnam text-[22px] font-medium text-[#141219] leading-snug">
                         Eyebrow Transplant
@@ -78,7 +78,7 @@ const Treatments = () => {
                     </Link>
                 </div>
                 {/* Treatment Card 4*/}
-                <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
+                <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
                     <div className="flex flex-col items-center justify-center text-center space-y-[25px] flex-1 w-full px-[20px]">
                         <h3 className="font-bevietnam text-[22px] font-medium text-[#141219] leading-snug">
                         Afro Hair Transplant
@@ -97,7 +97,7 @@ const Treatments = () => {
                     </Link>
                 </div>
                 {/* Treatment Card 5*/}
-                <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
+                <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
                     <div className="flex flex-col items-center justify-center text-center space-y-[25px] flex-1 w-full px-[20px]">
                         <h3 className="font-bevietnam text-[22px] font-medium text-[#141219] leading-snug">
                         Female Hair Transplant
@@ -116,7 +116,7 @@ const Treatments = () => {
                     </Link>
                 </div>
                 {/* Treatment Card 6*/}
-                <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
+                <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow flex flex-col items-center justify-between text-center w-full max-w-sm mx-auto h-full">
                     <div className="flex flex-col items-center justify-center text-center space-y-[25px] flex-1 w-full px-[20px]">
                         <h3 className="font-bevietnam text-[22px] font-medium text-[#141219] leading-snug">
                         Un-Shaven Hair Transplant
