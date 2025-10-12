@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Patient1Before from "../assets/PatientImages/Patient1Before.svg"
 import Patient1After from "../assets/PatientImages/Patient1After.svg"
 import Patient2Before from "../assets/PatientImages/Patient2Before.svg"
@@ -12,55 +12,67 @@ import Patient5After from "../assets/PatientImages/Patient5After.svg"
 import Patient6Before from "../assets/PatientImages/Patient6Before.svg"
 import Patient6After from "../assets/PatientImages/Patient6After.svg"
 
+
 const FlipCard = ({ beforeImage, afterImage, title, description }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleFlip = () => {
+    // Only trigger click flip for mobile devices
+    if (window.innerWidth < 768) {
+      setIsFlipped(!isFlipped);
+    }
+  };
+
   return (
-    <div className="relative w-full h-[380px] group cursor-pointer perspective">
+    <div className="w-full max-w-sm mx-auto bg-white rounded-lg shadow-md p-[25px_15px]">
+      {/* Flip Wrapper */}
       <div
-        className="relative w-full h-full transition-transform duration-700 ease-in-out preserve-3d group-hover:rotate-y-180"
+        className="relative w-full h-[250px] group cursor-pointer"
+        style={{ perspective: "1000px" }}
+        onClick={handleFlip}
       >
-        {/* Front Side */}
         <div
-          className="absolute w-full h-full rounded-lg bg-cover bg-center shadow-lg backface-hidden"
-          style={{
-            backgroundImage: `url(${beforeImage})`,
-          }}
+          className={`relative w-full h-full transition-transform duration-700 ease-in-out ${
+            isFlipped ? "rotate-y-180" : ""
+          } md:group-hover:rotate-y-180`}
+          style={{ transformStyle: "preserve-3d" }}
         >
-          {/* Badge */}
-          <div className="absolute top-4 left-4 bg-gray-800 text-white text-xs px-4 py-1 rounded-full shadow-md">
-            BEFORE
+          {/* Front Image */}
+          <div
+            className="absolute w-full h-full bg-cover bg-center rounded-md shadow-sm"
+            style={{
+              backgroundImage: `url(${beforeImage})`,
+              backfaceVisibility: "hidden",
+            }}
+          >
+            <div className="absolute top-3 left-3 bg-[#FFEBC8] border border-[#E6D3AD] text-[#3C2A1E] text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wide shadow-sm">
+              Before
+            </div>
           </div>
 
-          {/* Content Overlay */}
-          <div className="absolute bottom-0 left-0 right-0 bg-white/95 p-4">
-            <h3 className="text-gray-900 text-lg font-bold">{title}</h3>
-            <p className="text-gray-600 text-sm">{description}</p>
+          {/* Back Image */}
+          <div
+            className="absolute w-full h-full bg-cover bg-center rounded-md shadow-sm rotate-y-180"
+            style={{
+              backgroundImage: `url(${afterImage})`,
+              backfaceVisibility: "hidden",
+            }}
+          >
+            <div className="absolute top-3 left-3 bg-[#FFEBC8] border border-[#E6D3AD] text-[#3C2A1E] text-[11px] font-semibold px-3 py-1 rounded-full uppercase tracking-wide shadow-sm">
+              After
+            </div>
           </div>
         </div>
+      </div>
 
-        {/* Back Side */}
-        <div
-          className="absolute w-full h-full rounded-lg bg-cover bg-center shadow-lg rotate-y-180 backface-hidden"
-          style={{
-            backgroundImage: `url(${afterImage})`,
-          }}
-        >
-          {/* Badge */}
-          <div className="absolute top-4 left-4 bg-emerald-600 text-white text-xs px-4 py-1 rounded-full shadow-md">
-            AFTER
-          </div>
-
-          {/* Content Overlay */}
-          <div className="absolute bottom-0 left-0 right-0 bg-white/95 p-4">
-            <h3 className="text-gray-900 text-lg font-bold">{title}</h3>
-            <p className="text-gray-600 text-sm">{description}</p>
-          </div>
-        </div>
+      {/* Text Below */}
+      <div className="text-center mt-5">
+        <h3 className="text-gray-900 text-lg font-semibold">{title}</h3>
+        <p className="text-gray-600 text-sm">{description}</p>
       </div>
     </div>
   );
 };
-
-
 
 const Transformations=()=>{
     return(
