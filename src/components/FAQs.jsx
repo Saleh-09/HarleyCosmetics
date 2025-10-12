@@ -83,10 +83,10 @@ const FAQs = ({ limit }) => {
         <Accordion type="single" className="max-w-5xl" collapsible>
           {displayedFaqs.map((faq, index) => (
             <AccordionItem key={index} value={`item-${index + 1}`}>
-              <AccordionTrigger className="text-[23px] font-medium text-[#3C2031]">
+              <AccordionTrigger className="text-base sm:text-lg md:text-[23px] font-medium text-[#3C2031]">
                 {index + 1}. {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-[18px] text-gray-700">
+              <AccordionContent className="text-sm sm:text-base md:text-[18px] text-gray-700">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

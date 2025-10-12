@@ -21,12 +21,27 @@ const Testimonial = () => {
   const scrollRef = useRef(null);
 
   const scrollLeft = () => {
-    scrollRef.current.scrollBy({ left: -350, behavior: "smooth" });
-  };
+  const container = scrollRef.current;
+  if (!container) return;
 
-  const scrollRight = () => {
-    scrollRef.current.scrollBy({ left: 350, behavior: "smooth" });
-  };
+  if (container.scrollLeft === 0) {
+    container.scrollTo({ left: container.scrollWidth, behavior: "smooth" });
+  } else {
+    container.scrollBy({ left: -350, behavior: "smooth" });
+  }
+};
+
+const scrollRight = () => {
+  const container = scrollRef.current;
+  if (!container) return;
+
+  
+  if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 10) {
+    container.scrollTo({ left: 0, behavior: "smooth" });
+  } else {
+    container.scrollBy({ left: 350, behavior: "smooth" });
+  }
+};
 
   return (
     <div className="max-w-7xl mx-auto px-4 relative mb-20">
@@ -40,48 +55,52 @@ const Testimonial = () => {
         </p>
       </div>
 
-      {/* Arrows */}
-      <button
-        onClick={scrollLeft}
-        className="absolute -left-4 top-1/2 -translate-y-1/2 bg-[#3C2031] shadow-md w-10 h-10 rounded-full flex items-center justify-center hover:shadow-lg transition cursor-pointer"
-      >
-        <ChevronLeft color="#FCD9A1" size={25} />
-      </button>
+      {/* Scroll Container Wrapper */}
+      <div className="relative w-full">
+        {/* Left Arrow */}
+        <button
+          onClick={scrollLeft}
+          className="absolute -left-4 top-1/2 -translate-y-1/2 bg-[#3C2031] shadow-md w-10 h-10 rounded-full flex items-center justify-center hover:shadow-lg transition cursor-pointer"
+        >
+          <ChevronLeft color="#FCD9A1" size={25} />
+        </button>
 
-      <button
-        onClick={scrollRight}
-        className="absolute -right-4 top-1/2 -translate-y-1/2 bg-[#3C2031] shadow-md w-10 h-10 rounded-full flex items-center justify-center hover:shadow-lg transition cursor-pointer"
-      >
-        <ChevronRight color="#FCD9A1" size={20} />
-      </button>
+        {/* Right Arrow */}
+        <button
+          onClick={scrollRight}
+          className="absolute -right-4 top-1/2 -translate-y-1/2 bg-[#3C2031] shadow-md w-10 h-10 rounded-full flex items-center justify-center hover:shadow-lg transition cursor-pointer"
+        >
+          <ChevronRight color="#FCD9A1" size={20} />
+        </button>
 
-      {/* Scrollable Cards */}
-      <div
-        ref={scrollRef}
-        className="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar py-6"
-      >
-        {testimonials.map((item, index) => (
-          <div
-            key={index}
-            className="min-w-[320px] md:min-w-[360px] bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden cursor-pointer"
-          >
-            <div className="p-6 py-8">
-              <div className="flex items-center gap-4 mb-4">
-                <img src={item.img} alt={item.name} className="w-12 h-12 rounded-full object-cover" />
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
-                  <p className="text-sm text-gray-500">{item.role}</p>
+        {/* Scrollable Cards */}
+        <div
+          ref={scrollRef}
+          className="flex gap-6 overflow-x-auto scroll-smooth no-scrollbar py-6"
+        >
+          {testimonials.map((item, index) => (
+            <div
+              key={index}
+              className="min-w-[320px] md:min-w-[360px] bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden cursor-pointer"
+            >
+              <div className="p-6 py-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <img src={item.img} alt={item.name} className="w-12 h-12 rounded-full object-cover" />
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
+                    <p className="text-sm text-gray-500">{item.role}</p>
+                  </div>
                 </div>
+                <div className="flex items-center gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <p className="text-gray-600 leading-relaxed">{item.text}</p>
               </div>
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <p className="text-gray-600 leading-relaxed">{item.text}</p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
