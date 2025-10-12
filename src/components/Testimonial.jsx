@@ -29,7 +29,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 relative">
+    <div className="max-w-7xl mx-auto px-4 relative mb-20">
       {/* Section Header */}
       <div className="text-center mb-12">
         <h2 className="text-gray-900 font-bold text-4xl md:text-5xl mb-4">
@@ -43,16 +43,16 @@ const Testimonial = () => {
       {/* Arrows */}
       <button
         onClick={scrollLeft}
-        className="absolute -left-4 top-1/2 -translate-y-1/2 bg-white shadow-md w-10 h-10 rounded-full flex items-center justify-center hover:shadow-lg transition cursor-pointer"
+        className="absolute -left-4 top-1/2 -translate-y-1/2 bg-[#3C2031] shadow-md w-10 h-10 rounded-full flex items-center justify-center hover:shadow-lg transition cursor-pointer"
       >
-        <ChevronLeft size={20} />
+        <ChevronLeft color="#FCD9A1" size={25} />
       </button>
 
       <button
         onClick={scrollRight}
-        className="absolute -right-4 top-1/2 -translate-y-1/2 bg-white shadow-md w-10 h-10 rounded-full flex items-center justify-center hover:shadow-lg transition cursor-pointer"
+        className="absolute -right-4 top-1/2 -translate-y-1/2 bg-[#3C2031] shadow-md w-10 h-10 rounded-full flex items-center justify-center hover:shadow-lg transition cursor-pointer"
       >
-        <ChevronRight size={20} />
+        <ChevronRight color="#FCD9A1" size={20} />
       </button>
 
       {/* Scrollable Cards */}
